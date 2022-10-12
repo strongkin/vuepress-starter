@@ -14,6 +14,15 @@ module.exports = {
       },
       { text: "vue组件", link: "/handbook/ConditionalTypes" },
       {
+        text: "vue学习",
+        link: "/vue/",
+        items: [
+          { text: "vue基础", link: "/vue/vuebase/" },
+          { text: "vuex", link: "/vue/vuex/" },
+          { text: "vueRouter路由", link: "/vue/vueRouter/" },
+        ],
+      },
+      {
         text: " JavaScript 博客",
         items: [
           { text: "Github", link: "https://github.com/strongkin" },
@@ -328,6 +337,109 @@ module.exports = {
               title: "编辑用户资料",
               path: "/page/vue/geek/12-编辑用户资料",
             },
+          ],
+        },
+      ],
+      "/vue/": [
+        {
+          title: "vue学习",
+          // link: "/docs/vue/vuebase.md",
+          path: "/vue/vuebase",
+          collapsable: true, // 不折叠
+          children: [
+            { title: "vue基础", path: "/vue/vuebase" },
+            { title: "vuex", path: "/vue/vuex" },
+            { title: "vueRouter路由", path: "/vue/vueRouter" },
+            { title: "vue源码", path: "/vue/vueSource" },
+            { title: "vue面试", path: "/vue/vueInterview" },
+            { title: "vue3", path: "/vue/vue3" },
+            { title: "虚拟DOM", path: "/vue/vueVirtualDom" },
+            // { title: "服务端渲染", path: "/vue/rendering" },
+            { title: "响应式原理", path: "/vue/vueResponed" },
+          ],
+        },
+        {
+          title: "人力管理",
+          path: "/vue/hrsaas/01-vuex基础",
+          children: [
+            {
+              title: "vuex基础",
+              path: "/vue/hrsaas/01-vuex基础",
+            },
+            {
+              title: "基础环境搭建",
+              path: "/vue/hrsaas/02-基础环境搭建",
+            },
+            {
+              title: "登录模块",
+              path: "/vue/hrsaas/03-登录模块",
+            },
+            {
+              title: "主页模块",
+              path: "/vue/hrsaas/04-主页模块",
+            },
+            {
+              title: "路由和页面",
+              path: "/vue/hrsaas/05-路由和页面",
+            },
+            {
+              title: "组织架构",
+              path: "/vue/hrsaas/06-组织架构",
+            },
+            {
+              title: "公司和角色",
+              path: "/vue/hrsaas/07-公司和角色",
+            },
+            {
+              title: "员工管理",
+              path: "/vue/hrsaas/08-员工管理",
+            },
+            {
+              title: "权限设计和管理",
+              path: "/vue/hrsaas/09-权限设计和管理",
+            },
+            {
+              title: "其他模块集成",
+              path: "/vue/hrsaas/10-其他模块集成",
+            },
+            {
+              title: "主页审批-图表",
+              path: "/vue/hrsaas/11-主页审批-图表",
+            },
+            {
+              title: "多语言tab页全屏主题",
+              path: "/vue/hrsaas/12-多语言tab页全屏主题",
+            },
+            {
+              title: "打包上线",
+              path: "/vue/hrsaas/13-打包上线",
+            },
+            {
+              title: "Element表单校验补充",
+              path: "/vue/hrsaas/Element表单校验补充",
+            },
+          ],
+        },
+        {
+          title: "小兔仙",
+          path: "/vue/rabbit/00-vue3入门",
+          children: [
+            { title: "vue3入门", path: "/vue/rabbit/00-vue3入门" },
+            { title: "项目介绍", path: "/vue/rabbit/01-项目介绍" },
+            { title: "项目起步", path: "/vue/rabbit/02-项目起步" },
+            {
+              title: "首页模块-Layout",
+              path: "/vue/rabbit/03-首页模块-Layout",
+            },
+            {
+              title: "首页模块-main主体",
+              path: "/vue/rabbit/04-首页模块-main主体",
+            },
+            { title: "分类模块", path: "/vue/rabbit/05-分类模块" },
+            { title: "详情模块", path: "/vue/rabbit/06-详情模块" },
+            { title: "登录模块", path: "/vue/rabbit/07-登录模块" },
+            { title: "购物车模块", path: "/vue/rabbit/08-购物车模块" },
+            { title: "结算中心模块", path: "/vue/rabbit/09-结算中心模块" },
           ],
         },
       ],
