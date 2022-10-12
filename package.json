@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.9.7"
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+    "vuepress": "^1.9.7",
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
@@ -12,7 +14,6 @@
     "deploy": "bash deploy.sh"
   },
   "dependencies": {
-    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
-    "vuepress-plugin-nuggets-style-copy": "^1.0.3"
+    "vuepress-theme-reco": "^1.6.16"
   }
 }

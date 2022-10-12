@@ -1,6 +1,7 @@
 module.exports = {
   title: "TS文档",
   description: "TS文档翻译",
+  theme: "reco",
   base: "/vuepress-starter/",
   themeConfig: {
     sidebar: "auto",
@@ -334,20 +335,9 @@ module.exports = {
   },
   plugins: [
     [
-      "vuepress-plugin-nuggets-style-copy",
-      {
-        copyText: "复制代码",
-        tip: {
-          content: "复制成功",
-        },
-      },
-    ],
-    [
       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
       {
         theme: [
-          "shizuku",
-          "z16",
           "blackCat",
           "whiteCat",
           "haru1",
@@ -355,14 +345,49 @@ module.exports = {
           "haruto",
           "koharu",
           "izumi",
-
+          "shizuku",
           "wanko",
           "miku",
+          "z16",
         ],
       },
     ],
+    // ["vuepress-plugin-nuggets-style-copy"],
   ],
-  markdown: {
-    lineNumbers: true,
-  },
+  // markdown: {
+  //   lineNumbers: true,
+  // },
 }
+// plugins: [
+//   //. omitted
+//   ["vuepress-plugin-nuggets-style-copy"],
+// ]
+// plugins= [
+//     [
+//       "vuepress-plugin-nuggets-style-copy",
+//       {
+//         copyText: "复制代码",
+//         tip: {
+//           content: "复制成功",
+//         },
+//       },
+//     ],
+//     [
+//       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+//       {
+//         theme: [
+//           "shizuku",
+//           "z16",
+//           "blackCat",
+//           "whiteCat",
+//           "haru1",
+//           "haru2",
+//           "haruto",
+//           "koharu",
+//           "izumi",
+//           "wanko",
+//           "miku",
+//         ],
+//       },
+//     ],
+//   ],
