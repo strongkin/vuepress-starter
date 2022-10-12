@@ -24,77 +24,78 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/handbook/": [{
-        title: "基础学习",
-        // path: "/handbook/",
-        // sidebarDepth: 1,
-        collapsable: false, // 不折叠
-        children: [
-          // ['handbooks/ConditionalTypes', "vue 相关原理进阶"],
-          // [
-          //   "handbook/Generics",
-          //   "react-redux 的新特性 useSelector, useDispatch",
-          // ],
-          // ["handbook/Commponet", "vue组件开发"],
-          // ["handbook/Ssr", "ssr"],
-          { title: "vue 相关原理进阶", path: "/handbook/ConditionalTypes" },
-          {
-            title: "react-redux 的新特性 useSelector, useDispatch",
-            path: "/handbook/Generics",
-          },
-          { title: "vue组件开发", path: "/handbook/Commponet" },
-          { title: "ssr", path: "/handbook/Ssr" },
-        ],
-        // initialOpenGroupIndex: -1,
-      },
-      {
-        title: "小兔仙+TS+pinia",
-        // path: "/handbook/vueRabbitTs/01-项目起步",
-        collapsable: true, // 不折叠
-        children: [
-          {
-            title: "项目起步",
-            path: "/handbook/vueRabbitTs/01-项目起步",
-          },
-          {
-            title: "首页模块",
-            path: "/handbook/vueRabbitTs/02-首页模块",
-          },
-          {
-            title: "分类模块",
-            path: "/handbook/vueRabbitTs/03-分类模块",
-          },
-          {
-            title: "详情模块",
-            path: "/handbook/vueRabbitTs/04-详情模块",
-          },
-          {
-            title: "登录模块",
-            path: "/handbook/vueRabbitTs/05-登录模块",
-          },
-          {
-            title: "购物车模块",
-            path: "/handbook/vueRabbitTs/06-购物车模块",
-          },
-          {
-            title: "订单模块",
-            path: "/handbook/vueRabbitTs/07-订单模块",
-          },
-          {
-            title: "支付模块",
-            path: "/handbook/vueRabbitTs/08-支付模块",
-          },
-          {
-            title: "会员模块",
-            path: "/handbook/vueRabbitTs/09-会员模块",
-          },
-          {
-            title: "拓展阅读",
-            path: "/handbook/vueRabbitTs/拓展阅读",
-          },
-        ],
-        initialOpenGroupIndex: -1,
-      },
+      "/handbook/": [
+        {
+          title: "基础学习",
+          // path: "/handbook/",
+          // sidebarDepth: 1,
+          collapsable: false, // 不折叠
+          children: [
+            // ['handbooks/ConditionalTypes', "vue 相关原理进阶"],
+            // [
+            //   "handbook/Generics",
+            //   "react-redux 的新特性 useSelector, useDispatch",
+            // ],
+            // ["handbook/Commponet", "vue组件开发"],
+            // ["handbook/Ssr", "ssr"],
+            { title: "vue 相关原理进阶", path: "/handbook/ConditionalTypes" },
+            {
+              title: "react-redux 的新特性 useSelector, useDispatch",
+              path: "/handbook/Generics",
+            },
+            { title: "vue组件开发", path: "/handbook/Commponet" },
+            { title: "ssr", path: "/handbook/Ssr" },
+          ],
+          // initialOpenGroupIndex: -1,
+        },
+        {
+          title: "小兔仙+TS+pinia",
+          // path: "/handbook/vueRabbitTs/01-项目起步",
+          collapsable: true, // 不折叠
+          children: [
+            {
+              title: "项目起步",
+              path: "/handbook/vueRabbitTs/01-项目起步",
+            },
+            {
+              title: "首页模块",
+              path: "/handbook/vueRabbitTs/02-首页模块",
+            },
+            {
+              title: "分类模块",
+              path: "/handbook/vueRabbitTs/03-分类模块",
+            },
+            {
+              title: "详情模块",
+              path: "/handbook/vueRabbitTs/04-详情模块",
+            },
+            {
+              title: "登录模块",
+              path: "/handbook/vueRabbitTs/05-登录模块",
+            },
+            {
+              title: "购物车模块",
+              path: "/handbook/vueRabbitTs/06-购物车模块",
+            },
+            {
+              title: "订单模块",
+              path: "/handbook/vueRabbitTs/07-订单模块",
+            },
+            {
+              title: "支付模块",
+              path: "/handbook/vueRabbitTs/08-支付模块",
+            },
+            {
+              title: "会员模块",
+              path: "/handbook/vueRabbitTs/09-会员模块",
+            },
+            {
+              title: "拓展阅读",
+              path: "/handbook/vueRabbitTs/拓展阅读",
+            },
+          ],
+          initialOpenGroupIndex: -1,
+        },
       ],
       "/page/": [
         {
@@ -331,6 +332,36 @@ module.exports = {
       ],
     },
   },
+  plugins: [
+    [
+      "vuepress-plugin-nuggets-style-copy",
+      {
+        copyText: "复制代码",
+        tip: {
+          content: "复制成功",
+        },
+      },
+    ],
+    [
+      "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+      {
+        theme: [
+          "shizuku",
+          "z16",
+          "blackCat",
+          "whiteCat",
+          "haru1",
+          "haru2",
+          "haruto",
+          "koharu",
+          "izumi",
+
+          "wanko",
+          "miku",
+        ],
+      },
+    ],
+  ],
   markdown: {
     lineNumbers: true,
   },
