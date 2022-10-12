@@ -3,9 +3,21 @@ module.exports = {
   description: "TS文档翻译",
   theme: "reco",
   base: "/vuepress-starter/",
+  head: [
+    // 注入到当前页面的 HTML <head> 中的标签
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "/images/logo.png",
+      },
+    ], // 增加一个自定义的 favicon(网页标签的图标)
+  ],
   themeConfig: {
+    // logo: "https://www.escook.cn/docs-uni-shop/logo.png",
+    // logo: "https://megasu.gitee.io/vue3-ts-erabbit-client-pc-document/hero.png",
+    logo: "/images/logo.png",
     sidebar: "auto",
-    // logo: "/assets/img/logo.png",
     nav: [
       { text: "首页", link: "/" },
       {
@@ -15,12 +27,12 @@ module.exports = {
       { text: "vue组件", link: "/handbook/ConditionalTypes" },
       {
         text: "vue学习",
-        link: "/vue/",
-        items: [
-          { text: "vue基础", link: "/vue/vuebase/" },
-          { text: "vuex", link: "/vue/vuex/" },
-          { text: "vueRouter路由", link: "/vue/vueRouter/" },
-        ],
+        link: "/vue/vuebase",
+        // items: [
+        //   { text: "vue基础", link: "/vue/vuebase" },
+        //   { text: "vuex", link: "/vue/vuex" },
+        //   { text: "vueRouter路由", link: "/vue/vueRouter" },
+        // ],
       },
       {
         text: " JavaScript 博客",
@@ -37,17 +49,10 @@ module.exports = {
       "/handbook/": [
         {
           title: "基础学习",
-          // path: "/handbook/",
+          path: "/handbook/",
           // sidebarDepth: 1,
-          collapsable: false, // 不折叠
+          collapsable: true, // 不折叠
           children: [
-            // ['handbooks/ConditionalTypes', "vue 相关原理进阶"],
-            // [
-            //   "handbook/Generics",
-            //   "react-redux 的新特性 useSelector, useDispatch",
-            // ],
-            // ["handbook/Commponet", "vue组件开发"],
-            // ["handbook/Ssr", "ssr"],
             { title: "vue 相关原理进阶", path: "/handbook/ConditionalTypes" },
             {
               title: "react-redux 的新特性 useSelector, useDispatch",
@@ -60,8 +65,8 @@ module.exports = {
         },
         {
           title: "小兔仙+TS+pinia",
-          // path: "/handbook/vueRabbitTs/01-项目起步",
-          collapsable: true, // 不折叠
+          path: "/handbook/vueRabbitTs/01-项目起步",
+          collapsable: false, // 不折叠1
           children: [
             {
               title: "项目起步",
@@ -111,7 +116,7 @@ module.exports = {
         {
           title: "js基础学习",
           // path: "/page/js/JSBasics",
-          collapsable: true, // 折叠
+          collapsable: false, // 折叠
           children: [
             { title: "js基础", path: "/page/js/JSBasics" },
             {
@@ -124,11 +129,12 @@ module.exports = {
         {
           title: "js高级学习",
           // path: "/page/js/",
-          collapsable: true, // 折叠
+          collapsable: false, // 折叠
           children: [
             {
               title: "js基础",
               path: "/page/js/js基础/js1/JavaScript基础第01天笔记",
+              collapsable: true, // 折叠
               children: [
                 {
                   title: "js基础1",
@@ -158,7 +164,8 @@ module.exports = {
             },
             {
               title: "js高级",
-              path: "/page/js/js高级/js1/JavaScript高级第01天笔记",
+              // path: "/page/js/js高级/js1/JavaScript高级第01天笔记",
+              collapsable: false, // 折叠
               children: [
                 {
                   title: "js高级1",
@@ -184,7 +191,8 @@ module.exports = {
             },
             {
               title: "WEBAPI",
-              path: "/page/js/webapi/webapi1/day01_WebAPIs",
+              // path: "/page/js/webapi/webapi1/day01_WebAPIs",
+              collapsable: false, // 折叠
               children: [
                 {
                   title: "webAPI1",
@@ -221,7 +229,7 @@ module.exports = {
         {
           title: "react学习",
           // path: "/page/react/reactbase",
-          collapsable: true, // 不折叠
+          collapsable: false, // 不折叠
           children: [
             { title: "reacr基础", path: "/page/react/reactbase" },
             { title: "组件基础", path: "/page/react/componentreact" },
@@ -237,7 +245,7 @@ module.exports = {
         {
           title: "ts学习",
           // path: "/page/ts/TypeScript",
-          collapsable: true, // 不折叠
+          collapsable: false, // 不折叠
           children: [
             {
               title: "ts介绍",
@@ -264,7 +272,7 @@ module.exports = {
         {
           title: "uniapp知识",
           // path: "/page/uniapp/UnappBase",
-          collapsable: true, // 不折叠
+          collapsable: false, // 不折叠
           children: [
             { title: "Vue服务端渲染", path: "/page/uniapp/rendering" },
             { title: "uniapp基础", path: "/page/uniapp/UnappBase" },
@@ -273,7 +281,7 @@ module.exports = {
         {
           title: "前端面试题",
           // path: "/page/interview/Front-endinterviewmanual",
-          collapsable: true, // 不折叠
+          collapsable: false, // 不折叠
           children: [
             {
               title: "前端面试题",
@@ -284,6 +292,7 @@ module.exports = {
         {
           title: "vue电商后台项目",
           // path: "/page/vue/VueManageprojectsinthebackground",
+          collapsable: false, // 折叠
           children: [
             {
               title: "vue电商后台项目",
@@ -294,6 +303,7 @@ module.exports = {
         {
           title: "移动h5",
           // path: "/page/vue/geek/ProjectInitialization",
+          collapsable: false, // 折叠
           children: [
             {
               title: "项目初始化",
@@ -343,9 +353,8 @@ module.exports = {
       "/vue/": [
         {
           title: "vue学习",
-          // link: "/docs/vue/vuebase.md",
-          path: "/vue/vuebase",
-          collapsable: true, // 不折叠
+          // path: "/vue/vuebase",
+          collapsable: false, // 不折叠
           children: [
             { title: "vue基础", path: "/vue/vuebase" },
             { title: "vuex", path: "/vue/vuex" },
@@ -360,7 +369,8 @@ module.exports = {
         },
         {
           title: "人力管理",
-          path: "/vue/hrsaas/01-vuex基础",
+          // path: "/vue/hrsaas/01-vuex基础",
+          collapsable: false, // 折叠
           children: [
             {
               title: "vuex基础",
@@ -419,10 +429,12 @@ module.exports = {
               path: "/vue/hrsaas/Element表单校验补充",
             },
           ],
+          initialOpenGroupIndex: -1,
         },
         {
           title: "小兔仙",
-          path: "/vue/rabbit/00-vue3入门",
+          // path: "/vue/rabbit/00-vue3入门",
+          collapsable: false, // 折叠
           children: [
             { title: "vue3入门", path: "/vue/rabbit/00-vue3入门" },
             { title: "项目介绍", path: "/vue/rabbit/01-项目介绍" },
@@ -441,6 +453,7 @@ module.exports = {
             { title: "购物车模块", path: "/vue/rabbit/08-购物车模块" },
             { title: "结算中心模块", path: "/vue/rabbit/09-结算中心模块" },
           ],
+          initialOpenGroupIndex: -1,
         },
       ],
     },
@@ -464,42 +477,8 @@ module.exports = {
         ],
       },
     ],
-    // ["vuepress-plugin-nuggets-style-copy"],
   ],
   // markdown: {
   //   lineNumbers: true,
   // },
 }
-// plugins: [
-//   //. omitted
-//   ["vuepress-plugin-nuggets-style-copy"],
-// ]
-// plugins= [
-//     [
-//       "vuepress-plugin-nuggets-style-copy",
-//       {
-//         copyText: "复制代码",
-//         tip: {
-//           content: "复制成功",
-//         },
-//       },
-//     ],
-//     [
-//       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
-//       {
-//         theme: [
-//           "shizuku",
-//           "z16",
-//           "blackCat",
-//           "whiteCat",
-//           "haru1",
-//           "haru2",
-//           "haruto",
-//           "koharu",
-//           "izumi",
-//           "wanko",
-//           "miku",
-//         ],
-//       },
-//     ],
-//   ],
