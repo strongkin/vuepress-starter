@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>组件化开发使用 react-redux 的新特性 useSelector, useDispatch | TS文档</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="TS文档翻译">
+    
+    <link rel="preload" href="/vuepress-starter/assets/css/0.styles.d7e25954.css" as="style"><link rel="preload" href="/vuepress-starter/assets/js/app.e3fb7a36.js" as="script"><link rel="preload" href="/vuepress-starter/assets/js/2.659413da.js" as="script"><link rel="preload" href="/vuepress-starter/assets/js/20.3e6bb9a7.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/js/10.f0a54ab5.js"><link rel="prefetch" href="/vuepress-starter/assets/js/11.d2f2be24.js"><link rel="prefetch" href="/vuepress-starter/assets/js/12.35e804de.js"><link rel="prefetch" href="/vuepress-starter/assets/js/13.3cc25877.js"><link rel="prefetch" href="/vuepress-starter/assets/js/14.31666be5.js"><link rel="prefetch" href="/vuepress-starter/assets/js/15.162fc1ed.js"><link rel="prefetch" href="/vuepress-starter/assets/js/16.7367de07.js"><link rel="prefetch" href="/vuepress-starter/assets/js/17.148da913.js"><link rel="prefetch" href="/vuepress-starter/assets/js/18.3c4946c5.js"><link rel="prefetch" href="/vuepress-starter/assets/js/19.b89a248b.js"><link rel="prefetch" href="/vuepress-starter/assets/js/21.a6f71e56.js"><link rel="prefetch" href="/vuepress-starter/assets/js/22.7cbca601.js"><link rel="prefetch" href="/vuepress-starter/assets/js/23.c9b13606.js"><link rel="prefetch" href="/vuepress-starter/assets/js/3.419d79d3.js"><link rel="prefetch" href="/vuepress-starter/assets/js/4.795ea2c9.js"><link rel="prefetch" href="/vuepress-starter/assets/js/5.f572c9b5.js"><link rel="prefetch" href="/vuepress-starter/assets/js/6.01825db4.js"><link rel="prefetch" href="/vuepress-starter/assets/js/7.d872f524.js"><link rel="prefetch" href="/vuepress-starter/assets/js/8.20633d30.js"><link rel="prefetch" href="/vuepress-starter/assets/js/9.57110574.js">
+    <link rel="stylesheet" href="/vuepress-starter/assets/css/0.styles.d7e25954.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-starter/" class="home-link router-link-active"><!----> <span class="site-name">TS文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress-starter/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vuepress-starter/handbook/ConditionalTypes.html" class="nav-link">
+  vue组件
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label=" JavaScript 博客" class="dropdown-title"><span class="title"> JavaScript 博客</span> <span class="arrow down"></span></button> <button type="button" aria-label=" JavaScript 博客" class="mobile-dropdown-title"><span class="title"> JavaScript 博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/strongkin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress-starter/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vuepress-starter/handbook/ConditionalTypes.html" class="nav-link">
+  vue组件
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label=" JavaScript 博客" class="dropdown-title"><span class="title"> JavaScript 博客</span> <span class="arrow down"></span></button> <button type="button" aria-label=" JavaScript 博客" class="mobile-dropdown-title"><span class="title"> JavaScript 博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/strongkin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/vuepress-starter/handbook/" aria-current="page" class="sidebar-heading clickable router-link-exact-active router-link-active open active"><span>基础学习</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-starter/handbook/ConditionalTypes.html" class="sidebar-link">vue 相关原理进阶</a></li><li><a href="/vuepress-starter/handbook/Generics.html" class="sidebar-link">react-redux 的新特性 useSelector, useDispatch</a></li><li><a href="/vuepress-starter/handbook/Commponet.html" class="sidebar-link">vue组件开发</a></li><li><a href="/vuepress-starter/handbook/Ssr.html" class="sidebar-link">ssr</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>小兔仙+TS+pinia</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="组件化开发使用-react-redux-的新特性-useselector-usedispatch"><a href="#组件化开发使用-react-redux-的新特性-useselector-usedispatch" class="header-anchor">#</a> 组件化开发使用 react-redux 的新特性 useSelector, useDispatch</h1> <div class="language- extra-class"><pre class="language-text"><code>import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';// 引入Provider
+import store from './store'// 引入store
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+ReactDOM.render(
+  &lt;React.StrictMode&gt;
+    &lt;Provider store={store}&gt;
+      &lt;App /&gt;
+    &lt;/Provider&gt;
+  &lt;/React.StrictMode&gt;,
+  document.getElementById(&quot;root&quot;)
+)
+</code></pre></div><p>在 reducer 文件夹下创建 counter.js 文件</p> <div class="language- extra-class"><pre class="language-text"><code>const counter = (state = 0, action) =&gt; {
+  console.log(&quot;counter reducer&quot;)
+  switch (action.type) {
+    case types.INCREMENT:
+      return state + action.payload
+    case types.DECREMENT:
+      return state - action.payload
+    default:
+      return state
+  }
+}
+export default counter
+</code></pre></div><p>在 reducer 下创建 index.js 文件</p> <div class="language- extra-class"><pre class="language-text"><code>import { combineReducers } from &quot;redux&quot;
+
+
+import counter from &quot;./count&quot;
+
+const rootReducer = combineReducers({
+  counts:counter
+})
+
+export default rootReducer
+</code></pre></div><p>在 store 文件夹下建立 index.js</p> <div class="language- extra-class"><pre class="language-text"><code>import { createStore } from &quot;redux&quot;
+import rootReducer from &quot;./reducer/index&quot;
+const store = createStore(
+  rootReducer,
+)
+export default store
+</code></pre></div><p>在 actions 文件夹下创建 counter.js</p> <div class="language- extra-class"><pre class="language-text"><code>import * as types from &quot;../actionTypes&quot;
+
+export const increment = (payload) =&gt; {
+  return { type: types.INCREMENT, payload }
+}
+export const decrement = (payload) =&gt; {
+  return { type: types.DECREMENT, payload }
+}
+</code></pre></div><p>在 actionTypes 文件夹下创建 index.js</p> <div class="language- extra-class"><pre class="language-text"><code>const INCREMENT = 'counter/increment'
+const DECREMENT = 'counter/decrement'
+export { INCREMENT, DECREMENT }
+</code></pre></div><p>在 app 组件中引入 useSelector, useDispatch 和 increment,decrement</p> <div class="language- extra-class"><pre class="language-text"><code>// 从react-redux引入useSelector, useDispatch
+import { useSelector, useDispatch } from 'react-redux';
+import { increment,decrement } from './store/actions/counter';
+
+const App = () =&gt; {
+  const count = useSelector((state) =&gt; state.counts)
+  const dispatch = useDispatch()
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;{count}&lt;/h1&gt;
+      &lt;button onClick={() =&gt; dispatch(increment(2))}&gt;加法&lt;/button&gt;
+      &lt;button onClick={()=&gt;dispatch(decrement(5))}&gt;减法&lt;/button&gt;
+    &lt;/div&gt;
+  )
+}
+export default App
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress-starter/assets/js/app.e3fb7a36.js" defer></script><script src="/vuepress-starter/assets/js/2.659413da.js" defer></script><script src="/vuepress-starter/assets/js/20.3e6bb9a7.js" defer></script>
+  </body>
+</html>
