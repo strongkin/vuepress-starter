@@ -1,5 +1,9 @@
 ---
 home: true
+bgImage: /images/logut.png
+bgImageStyle: {
+  height: '500px',
+}
 heroText: 一个分享各类资源的地方
 tagline: 公众号：strongking
 actionText: 查看资源 →

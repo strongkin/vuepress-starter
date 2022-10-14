@@ -9,15 +9,30 @@ module.exports = {
       "link",
       {
         rel: "icon",
-        href: "/images/logo.png",
+        href: "/images/good.png",
       },
     ], // 增加一个自定义的 favicon(网页标签的图标)
   ],
+
   themeConfig: {
+    type: "blog",
+    // displayAllHeaders: true ,
     // logo: "https://www.escook.cn/docs-uni-shop/logo.png",
     // logo: "https://megasu.gitee.io/vue3-ts-erabbit-client-pc-document/hero.png",
-    logo: "/images/logo.png",
+    logo: "/images/good.png",
+    authorAvatar: "/images/good.png",
     sidebar: "auto",
+    subSidebar: "auto",
+    // blogConfig: {
+    //   category: {
+    //     location: 2,     // 在导航栏菜单中所占的位置，默认2
+    //     text: 'Category' // 默认文案 “分类”
+    //   },
+    //   tag: {
+    //     location: 3,     // 在导航栏菜单中所占的位置，默认3
+    //     text: 'Tag'      // 默认文案 “标签”
+    //   },
+    // }
     nav: [
       { text: "首页", link: "/" },
       {
