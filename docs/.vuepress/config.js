@@ -294,6 +294,36 @@ module.exports = {
           ],
         },
         {
+          title: "微信小程序",
+          collapsable: false,
+          children: [
+            {
+              title: "小程序基础-用法",
+              path: "/page/uniapp/weixin/01-小程序基础-用法",
+            },
+            {
+              title: "小程序基础-进阶",
+              path: "/page/uniapp/weixin/02-小程序基础-进阶",
+            },
+            {
+              title: "黑马优购-首页",
+              path: "/page/uniapp/weixin/03-黑马优购-首页",
+            },
+            {
+              title: "黑马优购-分类",
+              path: "/page/uniapp/weixin/04-黑马优购-分类",
+            },
+            {
+              title: "黑马优购-购物车",
+              path: "/page/uniapp/weixin/05-黑马优购-购物车",
+            },
+            {
+              title: "黑马优购-登录支付",
+              path: "/page/uniapp/weixin/06-黑马优购-登录支付",
+            },
+          ],
+        },
+        {
           title: "前端面试题",
           // path: "/page/interview/Front-endinterviewmanual",
           collapsable: false, // 不折叠
@@ -474,6 +504,34 @@ module.exports = {
     },
   },
   plugins: [
+    // ["vuepress-plugin-nuggets-style-copy"],
+    [
+      "@vuepress-reco/vuepress-plugin-bulletin-popover",
+      {
+        width: "100px", // 默认 260px
+        height: "150px",
+        title: "消息提示",
+        body: [
+          {
+            type: "title",
+            content: "添加strongking好友入前端交流群",
+            style: "text-aligin: center;",
+          },
+          {
+            type: "image",
+            src: "/images/IMG_2022.png",
+            style: "align-items: center; width: 200px;height:180px;",
+          },
+        ],
+        footer: [
+          {
+            type: "button",
+            text: "打赏",
+            link: "/donate",
+          },
+        ],
+      },
+    ],
     [
       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
       {
