@@ -167,7 +167,7 @@
 
 - 对象在堆内存中，会单独存在一块super区域，用来存放父类的数据 
 
-  ![01_super内存图](.\img\01_super内存图.png)
+  ![01_super内存图](./img/01_super内存图.png)
 
 ### 2.6 方法重写（掌握）
 
@@ -223,7 +223,7 @@ public class Zi extends Fu {
 
 ### 2.8 权限修饰符 (理解) 
 
-![02_权限修饰符](.\img\02_权限修饰符.png)
+![02_权限修饰符](./img/02_权限修饰符.png)
 
 ### 2.9 黑马信息管理系统使用继承改进 (掌握) 
 
@@ -393,11 +393,11 @@ public class Zi extends Fu {
               return;
           }
           // 3. 遍历数组, 获取学生信息并打印在控制台
-          System.out.println("学号\t\t姓名\t年龄\t生日");
+          System.out.println("学号/t/t姓名/t年龄/t生日");
           for (int i = 0; i < stus.length; i++) {
               Student stu = stus[i];
               if (stu != null) {
-                  System.out.println(stu.getId() + "\t" + stu.getName() + "\t" + stu.getAge() + "\t\t" + stu.getBirthday());
+                  System.out.println(stu.getId() + "/t" + stu.getName() + "/t" + stu.getAge() + "/t/t" + stu.getBirthday());
               }
           }
       }
@@ -422,7 +422,7 @@ public class Zi extends Fu {
 
           // 3. 将学生对象,传递给StudentService(业务员)中的addStudent方法
           boolean result = studentService.addStudent(stu);
-          // 4. 根据返回的boolean类型结果, 在控制台打印成功\失败
+          // 4. 根据返回的boolean类型结果, 在控制台打印成功/失败
           if (result) {
               System.out.println("添加成功");
           } else {
@@ -798,11 +798,11 @@ public class Zi extends Fu {
               return;
           }
           // 3. 遍历数组, 获取学生信息并打印在控制台
-          System.out.println("学号\t\t姓名\t年龄\t生日");
+          System.out.println("学号/t/t姓名/t年龄/t生日");
           for (int i = 0; i < stus.length; i++) {
               Student stu = stus[i];
               if (stu != null) {
-                  System.out.println(stu.getId() + "\t" + stu.getName() + "\t" + stu.getAge() + "\t\t" + stu.getBirthday());
+                  System.out.println(stu.getId() + "/t" + stu.getName() + "/t" + stu.getAge() + "/t/t" + stu.getBirthday());
               }
           }
       }
@@ -827,7 +827,7 @@ public class Zi extends Fu {
 
           // 3. 将学生对象,传递给StudentService(业务员)中的addStudent方法
           boolean result = studentService.addStudent(stu);
-          // 4. 根据返回的boolean类型结果, 在控制台打印成功\失败
+          // 4. 根据返回的boolean类型结果, 在控制台打印成功/失败
           if (result) {
               System.out.println("添加成功");
           } else {

@@ -26,7 +26,7 @@
 
 + StudentController类  和用户打交道(接收用户需求,采集用户信息,打印数据到控制台)
 
-  ![01_黑马信息管理系统分类](.\img\01_黑马信息管理系统分类.png)
+  ![01_黑马信息管理系统分类](./img/01_黑马信息管理系统分类.png)
 
 ## 3.分包思想
 
@@ -81,7 +81,7 @@
 
 ### 4.1系统介绍 (理解) 
 
-![02_黑马信息管理系统介绍](.\img\02_黑马信息管理系统介绍.png)
+![02_黑马信息管理系统介绍](./img/02_黑马信息管理系统介绍.png)
 
 ### 4.2学生管理系统 (应用) 
 
@@ -122,24 +122,24 @@
 
 + 添加功能实现步骤 
 
-  ![03_添加功能需求分析](.\img\03_添加功能需求分析.png)
+  ![03_添加功能需求分析](./img/03_添加功能需求分析.png)
 
 
 + 添加功能优化:判断id是否存在
 
-  ![04_判断id是否存在](.\img\04_判断id是否存在.png)
+  ![04_判断id是否存在](./img/04_判断id是否存在.png)
 
 + 查询功能实现步骤
 
-  ![05_查询功能需求分析](.\img\05_查询功能需求分析.png)
+  ![05_查询功能需求分析](./img/05_查询功能需求分析.png)
 
 + 删除功能实现步骤
 
-  ![06_删除功能需求分析](.\img\06_删除功能需求分析.png)
+  ![06_删除功能需求分析](./img/06_删除功能需求分析.png)
 
 + 修改功能实现步骤 
 
-  ![07_修改功能需求分析](.\img\07_修改功能需求分析.png)
+  ![07_修改功能需求分析](./img/07_修改功能需求分析.png)
 
 + 系统优化 
 
@@ -316,11 +316,11 @@ public class StudentController {
             return;
         }
         // 3. 遍历数组, 获取学生信息并打印在控制台
-        System.out.println("学号\t\t姓名\t年龄\t生日");
+        System.out.println("学号/t/t姓名/t年龄/t生日");
         for (int i = 0; i < stus.length; i++) {
             Student stu = stus[i];
             if (stu != null) {
-                System.out.println(stu.getId() + "\t" + stu.getName() + "\t" + stu.getAge() + "\t\t" + stu.getBirthday());
+                System.out.println(stu.getId() + "/t" + stu.getName() + "/t" + stu.getAge() + "/t/t" + stu.getBirthday());
             }
         }
     }
@@ -345,7 +345,7 @@ public class StudentController {
 
         // 3. 将学生对象,传递给StudentService(业务员)中的addStudent方法
         boolean result = studentService.addStudent(stu);
-        // 4. 根据返回的boolean类型结果, 在控制台打印成功\失败
+        // 4. 根据返回的boolean类型结果, 在控制台打印成功/失败
         if (result) {
             System.out.println("添加成功");
         } else {
@@ -551,19 +551,19 @@ public class StudentDao {
 
 + 添加功能实现步骤
 
-  ![10_添加老师功能实现步骤](.\img\10_添加老师功能实现步骤.png)
+  ![10_添加老师功能实现步骤](./img/10_添加老师功能实现步骤.png)
 
 + 查询功能实现步骤
 
-  ![11_查询老师功能实现步骤](.\img\11_查询老师功能实现步骤.png)
+  ![11_查询老师功能实现步骤](./img/11_查询老师功能实现步骤.png)
 
 + 删除功能实现步骤
 
-  ![12_删除老师功能实现步骤](.\img\12_删除老师功能实现步骤.png)
+  ![12_删除老师功能实现步骤](./img/12_删除老师功能实现步骤.png)
 
 + 修改功能实现步骤
 
-  ![13_修改老师功能实现步骤](.\img\13_修改老师功能实现步骤.png)
+  ![13_修改老师功能实现步骤](./img/13_修改老师功能实现步骤.png)
 
 + 系统优化
 
@@ -705,11 +705,11 @@ public class TeacherController {
         }
 
         // 3. 遍历数组, 取出元素, 并打印在控制台
-        System.out.println("学号\t\t姓名\t年龄\t生日");
+        System.out.println("学号/t/t姓名/t年龄/t生日");
         for (int i = 0; i < teachers.length; i++) {
             Teacher t = teachers[i];
             if (t != null) {
-                System.out.println(t.getId() + "\t" + t.getName() + "\t" + t.getAge() + "\t\t" + t.getBirthday());
+                System.out.println(t.getId() + "/t" + t.getName() + "/t" + t.getAge() + "/t/t" + t.getBirthday());
             }
         }
     }

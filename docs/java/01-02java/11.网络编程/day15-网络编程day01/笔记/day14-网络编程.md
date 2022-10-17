@@ -473,11 +473,11 @@ InetAddress：此类表示Internet协议（IP）地址
 
   - 三次握手
 
-    ![07_TCP三次握手](.\img\07_TCP三次握手.png)
+    ![07_TCP三次握手](./img/07_TCP三次握手.png)
 
   - 四次挥手
 
-    ![08_TCP四次挥手](.\img\08_TCP四次挥手.png)
+    ![08_TCP四次挥手](./img/08_TCP四次挥手.png)
 
 
 - 示例代码
