@@ -211,7 +211,7 @@ mydiv.dataset.foo = "bar!!!"
 
 **考察点: 处理响应式图片的方式** (css媒体查询换的是背景图片, 而不是 img 标签的 src)
 
-开发者和设计师们竞相寻求 **处理响应式图片** 的方法。这的确是一个[棘手的问题](https://css-tricks.com/responsive-./images-hard/) ，因为我们对同一个网站在众多设备宽度下，
+开发者和设计师们竞相寻求 **处理响应式图片** 的方法。这的确是一个[棘手的问题](https://css-tricks.com/responsive-./assets-hard/) ，因为我们对同一个网站在众多设备宽度下，
 
 使用同一图像源。你愿意在一个大显示屏上显示模糊地、马赛克状的图像？
 
@@ -331,7 +331,7 @@ script标签存在两个属性，defer和async，因此 script标签 的使用�
 
 下图是使用了 defer、async、和未使用时的运行情况对比：
 
-<img src="./images/image-20210209172314832.png" alt="image-20210209172314832" />
+<img src="./assets/image-20210209172314832.png" alt="image-20210209172314832" />
 
 > 【上图的图例说明】
 >
@@ -361,7 +361,7 @@ script标签存在两个属性，defer和async，因此 script标签 的使用�
 
 ## 10. 前端做本地数据存储的方式有哪些？
 
-<img src="./images/image-20210209174438863.png" alt="image-20210209174438863" />
+<img src="./assets/image-20210209174438863.png" alt="image-20210209174438863" />
 
 1. Cookies
 2. localStorage
@@ -677,7 +677,7 @@ webpack有工具, 可以写 px, 自动转 rem  https://youzan.github.io/vant/#/z
 
 
 
-<img src="./images/image-20210209212043708.png" alt="image-20210209212043708" style="zoom:70%;" />
+<img src="./assets/image-20210209212043708.png" alt="image-20210209212043708" style="zoom:70%;" />
 
 可以将这种关系想象成一摞书本，通过 z-index 可以改变一本书在这摞书中的上下位置。
 
@@ -813,7 +813,7 @@ BFC 的全称是 Block Formatting Context，块级格式化上下文。这是一
 
 ```
 
-<img src="./images/image-20210217142711472.png" alt="image-20210217142711472" style="zoom:50%;" />
+<img src="./assets/image-20210217142711472.png" alt="image-20210217142711472" style="zoom:50%;" />
 
 下面我们让其中一个盒子触发BFC，从而达到间隔 20px 的期望效果：
 
@@ -828,7 +828,7 @@ BFC 的全称是 Block Formatting Context，块级格式化上下文。这是一
 
 ```
 
-<img src="./images/image-20210217143506046.png" alt="image-20210217143506046" style="zoom:50%;" />
+<img src="./assets/image-20210217143506046.png" alt="image-20210217143506046" style="zoom:50%;" />
 
 
 
@@ -896,7 +896,7 @@ BFC 的全称是 Block Formatting Context，块级格式化上下文。这是一
 
 ```
 
-<img src="./images/image-20210217145325690.png" alt="image-20210217145325690" style="zoom:30%;" />
+<img src="./assets/image-20210217145325690.png" alt="image-20210217145325690" style="zoom:30%;" />
 
 要避免这种覆盖行为，可以让 box2 触发 BFC,  实现布局效果, 左边固定右边自适应：
 
@@ -909,7 +909,7 @@ BFC 的全称是 Block Formatting Context，块级格式化上下文。这是一
 
 ```
 
-<img src="./images/image-20210217145504963.png" alt="image-20210217145504963" style="zoom:30%;" />
+<img src="./assets/image-20210217145504963.png" alt="image-20210217145504963" style="zoom:30%;" />
 
 
 
@@ -1007,7 +1007,7 @@ https://img.alicdn.com/tfs/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png
 - 边框（border）
 - 外边距（margin）
 
-<img src="./images/image-20210214144941345.png" alt="image-20210214144941345" style="zoom:25%;" />
+<img src="./assets/image-20210214144941345.png" alt="image-20210214144941345" style="zoom:25%;" />
 
 
 
@@ -1030,7 +1030,7 @@ box-sizing: content-box; (默认值)
 
 在标准盒模型下，元素的宽（width）和高（height）值即为盒模型中内容（content）的实际宽高值。
 
-<img src="./images/image-20210214150511841.png" alt="image-20210214150511841" style="zoom:25%;" />
+<img src="./assets/image-20210214150511841.png" alt="image-20210214150511841" style="zoom:25%;" />
 
 
 
@@ -1048,7 +1048,7 @@ box-sizing: border-box; (目前主流常用值)
 
 在怪异盒模型下，元素的 width 和 height 值却不是 content 的实际宽高，而是去除 margin 后剩下的元素占用区域的宽高，即：
 
-<img src="./images/image-20210214151037552.png" alt="image-20210214151037552" style="zoom:25%;" />
+<img src="./assets/image-20210214151037552.png" alt="image-20210214151037552" style="zoom:25%;" />
 
 
 
@@ -1260,7 +1260,7 @@ console.log(a) // 1
 
 **复杂类型: 传递的是地址! (变量中存的就是地址)**
 
-![image-20210305165413588](./images/image-20210305165413588.png)
+![image-20210305165413588](./assets/image-20210305165413588.png)
 
 来看下面的代码：
 
@@ -1298,7 +1298,7 @@ console.log(a); // { count: 1 }
 
 ```
 
-![image-20210305165848781](./images/image-20210305165848781.png)
+![image-20210305165848781](./assets/image-20210305165848781.png)
 
 我们会发现外部的实参对象 `a` 并没有因为在函数内对形参的重新赋值而被改变！
 
@@ -1306,11 +1306,11 @@ console.log(a); // { count: 1 }
 
 下图展示的是复杂类型参数传递后的状态：
 
-<img src="./images/image-20210218233241397.png" alt="image-20210218233241397" style="zoom:50%;" />
+<img src="./assets/image-20210218233241397.png" alt="image-20210218233241397" style="zoom:50%;" />
 
 下图展示的是重新为形参赋值后的状态：
 
-<img src="./images/image-20210218233343016.png" alt="image-20210218233343016" style="zoom:50%;" />
+<img src="./assets/image-20210218233343016.png" alt="image-20210218233343016" style="zoom:50%;" />
 
 
 
@@ -1402,7 +1402,7 @@ cycle()
 
 ```
 
-![image-20210305172448582](./images/image-20210305172448582.png)
+![image-20210305172448582](./assets/image-20210305172448582.png)
 
 
 
@@ -1463,9 +1463,9 @@ fn()
 - `全局可执行上下文` 之上有多个 `函数可执行上下文`
 - 每个可执行上下文中包含了指向外部其他可执行上下文的引用，直到 `全局可执行上下文` 时它指向 `null`
 
-<img src="./images/image-20210218143938843.png" alt="image-20210218143938843" style="zoom:30%;" />
+<img src="./assets/image-20210218143938843.png" alt="image-20210218143938843" style="zoom:30%;" />
 
-![image-20210306093300970](./images/image-20210306093300970.png)
+![image-20210306093300970](./assets/image-20210306093300970.png)
 
 js全局有全局可执行上下文, 每个函数调用时, 有着函数的可执行上下文, 会入js调用栈
 
@@ -1576,7 +1576,7 @@ p.name // 访问不到 name 变量：undefined
 
 下表展示了一系列原始值，通过隐式转换成数字、字符串、布尔类型后所得到的值：
 
-<img src="./images/image-20210218171603780.png" alt="image-20210218171603780" style="zoom:45%;" />
+<img src="./assets/image-20210218171603780.png" alt="image-20210218171603780" style="zoom:45%;" />
 
 坑: 判断时,  尽量不要用 `= =` , 要用 `= = =` ( 两个等号判断,  如果类型不同,  默认会进行隐式类型转换再比较)
 
@@ -1590,7 +1590,7 @@ p.name // 访问不到 name 变量：undefined
 - 构造函数, 原型对象, 实例的三角关系图
 - 原型链如何形成
 
-![image-20210306104516852](./images/image-20210306104516852.png)
+![image-20210306104516852](./assets/image-20210306104516852.png)
 
 **原型对象**
 
@@ -1633,7 +1633,7 @@ console.log(Object.prototype.hasOwnProperty("hasOwnProperty")) // true
 
 而因为它的原型对象也有 `__proto__`，因此这样就串联形成一个链式结构，也就是我们称为的原型链。
 
-<img src="./images/image-20210218212449526.png" alt="image-20210218212449526" style="zoom:50%;" />
+<img src="./assets/image-20210218212449526.png" alt="image-20210218212449526" style="zoom:50%;" />
 
 
 
@@ -1698,7 +1698,7 @@ console.log(stu)
 
 ```
 
-![image-20210306111112493](./images/image-20210306111112493.png)
+![image-20210306111112493](./assets/image-20210306111112493.png)
 
 
 
@@ -1788,7 +1788,7 @@ console.log(stu)
 
 ```
 
-![image-20210306114638139](./images/image-20210306114638139.png)
+![image-20210306114638139](./assets/image-20210306114638139.png)
 
 
 
@@ -2049,7 +2049,7 @@ Promise.all([promise1, promise2, promise3]).then((values) => {
 
 Promise.race([promise1, promise2, promise3]) 赛跑, 竞速原则, 只要三个promise中有一个满足条件, 就会执行.then(用的较少)
 
-![image-20210306144638905](./images/image-20210306144638905.png)
+![](./assets/image-20210306144638905.png)
 
 
 
@@ -2074,11 +2074,11 @@ console.log(3)
 
 微任务: promise .then .catch的需要执行的内容, 属于微任务, 满足条件的微任务, 会被添加到当前宏任务的最后去执行
 
-![image-20201208040306978](./images/image-20201208040306978.png)
+![image-20201208040306978](./assets/image-20201208040306978.png)
 
 **事件循环队列 eventLoop**
 
-![image-20201208040235602](./images/image-20201208040235602.png)
+![image-20201208040235602](./assets/image-20201208040235602.png)
 
 例题1:
 
@@ -2100,7 +2100,7 @@ console.log(3)
 
 ```
 
-![image-20210306151137688](./images/image-20210306151137688.png)
+![image-20210306151137688](./assets/image-20210306151137688.png)
 
 
 
@@ -2143,7 +2143,7 @@ console.log(222)
 
 ```
 
-![image-20210306152010989](./images/image-20210306152010989.png)
+![image-20210306152010989](./assets/image-20210306152010989.png)
 
 考察点: async 函数只有从 await 往下才是异步的开始
 
@@ -2276,7 +2276,7 @@ HTTP 请求报⽂的组成：请求⾏、请求头、(空⾏)、请求体。
 
 实际请求报文实例:
 
-![image-20210305232854139](./images/image-20210305232854139.png)
+![image-20210305232854139](./assets/image-20210305232854139.png)
 
 **请求行**
 
@@ -2307,7 +2307,7 @@ Host: www.abc.com
 
 HTTP 响应报⽂的组成: 响应⾏、响应头、空⾏、响应体。
 
-<img src="./images/image-20210219125038371.png" alt="image-20210219125038371" style="zoom:40%;" />
+<img src="./assets/image-20210219125038371.png" alt="image-20210219125038371" style="zoom:40%;" />
 
 **响应行**
 
@@ -2338,7 +2338,7 @@ Content-Type: application/json
 
 小结:
 
-![image-20210306161216371](./images/image-20210306161216371.png)
+![image-20210306161216371](./assets/image-20210306161216371.png)
 
 
 
@@ -2467,7 +2467,7 @@ HTTPS 在传输数据的过程中会对数据进行加密处理，保证安全�
 
 通信的双⽅都使⽤同⼀个秘钥进⾏加解密。⽐如，两个人事先约定的暗号，就属于对称加密。 
 
-![image-20210306005550796](./images/image-20210306005550796.png)
+![image-20210306005550796](./assets/image-20210306005550796.png)
 
 对称加密的特点是：
 
@@ -2497,7 +2497,7 @@ HTTPS 在传输数据的过程中会对数据进行加密处理，保证安全�
 
 特征: 私钥可以解密公钥加密的内容,  公钥可以解密私钥加密的内容
 
-![image-20210306011528361](./images/image-20210306011528361.png)
+![image-20210306011528361](./assets/image-20210306011528361.png)
 
 非对称加密的特点是：
 
@@ -2533,7 +2533,7 @@ HTTPS 目前所使用的 TLS或SSL协议,  就是目前采用的加密通道的�
 
 进而进行非对称加密, 使用公钥, 加密`对称加密密钥`, 传递给服务器, 后续通信都使用对称加密!
 
-![image-20210306020401732](./images/image-20210306020401732.png)
+![image-20210306020401732](./assets/image-20210306020401732.png)
 
 **问题是: 初步互通消息时, 如果请求拿到的公钥信息, 就是假的, 或者不安全的! 那么后续的所有操作, 都将是不安全的!**
 
@@ -2543,13 +2543,13 @@ HTTPS 目前所使用的 TLS或SSL协议,  就是目前采用的加密通道的�
 
 **CA证书中心会对你网站的公钥, 网站的域名地址,  证书到期时间, 等一些相关信息一起加密签发数字证书, 保证你网站的安全性**
 
-![image-20210306014409595](./images/image-20210306014409595.png)
+![image-20210306014409595](./assets/image-20210306014409595.png)
 
 
 
 当公司申请了 CA 证书后, 就应该在响应时, 将数字证书一起发送给客户端
 
-![image-20210306021013686](./images/image-20210306021013686.png)
+![image-20210306021013686](./assets/image-20210306021013686.png)
 
 而客户端, 接收到消息后, 就可以查看证书
 
@@ -2557,7 +2557,7 @@ HTTPS 目前所使用的 TLS或SSL协议,  就是目前采用的加密通道的�
 
 2. 如果签发证书的机构, 不权威, 发出警告 
 
-   ![image-20210306021532010](./images/image-20210306021532010.png)
+   ![image-20210306021532010](./assets/image-20210306021532010.png)
 
 3. 如果证书过期了, 浏览器也会发出警告
 
@@ -2614,7 +2614,7 @@ HTTPS 目前所使用的 TLS或SSL协议,  就是目前采用的加密通道的�
 
 下图为首部表的更新示意图：
 
-<img src="./images/image-20210219160534616.png" alt="image-20210219160534616" style="zoom:30%;" />
+<img src="assets/image-20210219160534616.png" alt="image-20210219160534616" style="zoom:30%;" />
 
 
 
@@ -2642,7 +2642,7 @@ HTTPS 目前所使用的 TLS或SSL协议,  就是目前采用的加密通道的�
 - 单个连接可以承载任意数量的双向数据流 
 - 数据流以消息的形式发送，⽽消息⼜由⼀个或多个帧组成（多个帧可以乱序发送，因为可以根据帧⾸部的流标识来重新组装）
 
-![image-20210306023912779](./images/image-20210306023912779.png)
+![image-20210306023912779](./assets/image-20210306023912779.png)
 
 [参考文章：HTTP/2特性及其在实际应用中的表现](https://zhuanlan.zhihu.com/p/30166894)
 
@@ -2700,7 +2700,7 @@ HTTPS 目前所使用的 TLS或SSL协议,  就是目前采用的加密通道的�
 
 在Chrome的开发者工具中看到http的返回码是200，但是在Size列会显示为(from cache)。
 
-![img](./images/940884-20180423141536107-329179455.png)
+![](./assets/940884-20180423141536107-329179455.png)
 
 
 
@@ -2718,7 +2718,7 @@ Cache-Control : 指定一个过期时间 (3600s), 这个资源你加载到后, �
 
 Expires是Web服务器响应消息头字段，在响应http请求时告诉浏览器在过期时间前浏览器可以直接从浏览器缓存取数据，而无需再次请求。
 
-![image-20201209080705571](D:/z_work/72期/面试加强课-day02/02-笔记/asset/image-20201209080705571.png)
+![](./assets/image-20201209080705571.png)
 
 该字段会返回一个时间，比如Expires:  Wed, 23 Nov 2050 16:00:01 GMT 。这个时间代表着这个资源的失效时间，也就是说在xx年xx月xx日时间之前都是有效的，即命中缓存。
 
@@ -2742,7 +2742,7 @@ Cache-Control 可以由多个字段组合而成，主要有以下几个取值：
 
    第一次访问这个资源的时候，服务器端也返回了 Expires 字段，并且过期时间是一年后。
 
-   ![img](D:/z_work/72期/面试加强课-day02/02-笔记/asset/940884-20180423141638673-1917674992.png)
+   ![](./assets/940884-20180423141638673-1917674992.png)
 
    在没有禁用缓存并且没有超过有效时间的情况下，再次访问这个资源就命中了缓存，不会向服务器请求资源而是直接从浏览器缓存中取。
 
@@ -2778,13 +2778,13 @@ Cache-Control 可以由多个字段组合而成，主要有以下几个取值：
 
 Last-modify是一个时间标识该资源的**最后修改时间**，例如`Last-Modify: Thu,31 Dec 2037 23:59:59 GMT`。
 
-![img](D:/z_work/72期/面试加强课-day02/02-笔记/asset/940884-20180423141852114-1757065670.png)
+![](./assets/940884-20180423141852114-1757065670.png)
 
 当浏览器再次请求该资源时，发送的请求头中会包含If-Modify-Since，**该值为缓存之前返回的Last-Modify**。
 
 服务器收到If-Modify-Since后，根据实际服务器的资源的最后修改时间, 进行判断是否命中缓存。
 
-![img](./images/940884-20180423141732879-1484228353.png)
+![](./assets/940884-20180423141732879-1484228353.png)
 
 如果命中缓存，则返回 **http304**，并且不会返回资源内容，并且不会返回Last-Modify。
 
@@ -2806,7 +2806,7 @@ ETag值的变更则说明资源状态已经被修改。
 
 服务器根据浏览器上发送的If-None-Match值来判断是否命中缓存。
 
-![img](D:/z_work/72期/面试加强课-day02/02-笔记/asset/940884-20180423141918779-1206116367.png)
+![](./assets/940884-20180423141918779-1206116367.png)
 
 ETag生成靠以下几种因子
 
@@ -2860,11 +2860,11 @@ Last-Modified与ETag是可以一起使用的，服务器会优先验证ETag，�
 
 
 
-![img](D:/z_work/72期/面试加强课-day02/02-笔记/asset/940884-20180423141945261-83532090.png)
+![](./assets/940884-20180423141945261-83532090.png)
 
 **浏览器第二次请求**
 
-![img](D:/z_work/72期/面试加强课-day02/02-笔记/asset/940884-20180423141951735-912699213.png)
+![](./assets/940884-20180423141951735-912699213.png)
 
 
 
@@ -3028,7 +3028,7 @@ c）如果还没有找到，那么尝试从 hosts 文件里面去找
 
 d）在前面三个过程都没获取到的情况下，就递归地去域名服务器去查找(就近查找)，具体过程如下
 
-![dns域名解析](./images/5rxqugj8dh.png)
+![dns域名解析](./assets/5rxqugj8dh.png)
 
 DNS优化两个方面：DNS缓存、DNS负载均衡 (准备多台dns服务器, 进行dns解析)
 
@@ -3048,7 +3048,7 @@ DNS优化两个方面：DNS缓存、DNS负载均衡 (准备多台dns服务器, �
 
 下图为三次握手的示意图：
 
-![image-20210219192116213](./images/image-20210219192116213.png)
+![image-20210219192116213](./assets/image-20210219192116213.png)
 
 **第⼀次握⼿（SYN=1, seq=x）** 
 
@@ -3082,7 +3082,7 @@ DNS优化两个方面：DNS缓存、DNS负载均衡 (准备多台dns服务器, �
 
 下图为四次挥手示意图：
 
-![image-20210219192659983](./images/image-20210219192659983.png)
+![image-20210219192659983](./assets/image-20210219192659983.png)
 
 
 
@@ -3122,7 +3122,7 @@ HTTP基于传输层TCP协议不用担心数据传输的各种问题（当发生�
 
 根据这个IP，找到对应的服务器，发起TCP的三次握手 ([tcp 三次握手四次挥手](https://blog.csdn.net/qq_38950316/article/details/81087809) ) 
 
-![image-20201209160422978](./images/image-20201209160422978.png)
+![image-20201209160422978](./assets/image-20201209160422978.png)
 
 **为什么要3次握手**
 
@@ -3146,7 +3146,7 @@ HTTP基于传输层TCP协议不用担心数据传输的各种问题（当发生�
 
 关闭连接(四次挥手)
 
-![image-20201209162908979](./images/image-20201209162908979.png)
+![image-20201209162908979](./assets/image-20201209162908979.png)
 
  这和有礼貌的好友道别一样：（a：客户端 b:服务端）
 1、一开始A想要回家离开，但是呢？怕B还有事情要交代，那么呢？只好先想B打招呼，我要走了，请求停止交谈（此时，a到B的连接没有断开，依旧可以进行通信）；
@@ -3260,7 +3260,7 @@ DOM的事件模型(注册事件的方式)分为：
 - 处于⽬标阶段（target phase）
 - 事件冒泡阶段（bubbling phase）
 
-![image-20210219222213633](./images/image-20210219222213633.png)
+![image-20210219222213633](./assets/image-20210219222213633.png)
 
 如上图所示，事件流的触发顺序是：
 
@@ -3385,7 +3385,7 @@ DOM的事件模型(注册事件的方式)分为：
 
 不同的渲染引擎的具体做法稍有差异，但是大体流程都是差不多的，下面以 webkit 的渲染流程来说明：
 
-<img src="./images/image-20210220214851409.png" alt="image-20210220214851409" style="zoom:45%;" />
+<img src="./assets/image-20210220214851409.png" alt="image-20210220214851409" style="zoom:45%;" />
 
 上图展示的流程是：
 
@@ -3439,7 +3439,7 @@ DOM的事件模型(注册事件的方式)分为：
 
 为了更直观的观查，我们先将这棵 DOM 树先绘制成图：
 
-<img src="./images/image-20210220222103787.png" alt="image-20210220222103787" style="zoom:30%;" />
+<img src="./assets/image-20210220222103787.png" alt="image-20210220222103787" style="zoom:30%;" />
 
 然后我们来对比一下两种顺序的匹配：
 
@@ -3482,7 +3482,7 @@ DOM的事件模型(注册事件的方式)分为：
 
 下图为以上描述过程的图示：
 
-<img src="./images/image-20210220230003937.png" alt="image-20210220230003937" style="zoom:50%;" />
+<img src="./assets/image-20210220230003937.png" alt="image-20210220230003937" style="zoom:50%;" />
 
 
 
@@ -3666,7 +3666,7 @@ WebSocket 协议与 HTTP 协议保持兼容，但它不会融⼊ HTTP 协议，�
 
 HTTP 和 WebSocket 的连接通信比较图：
 
-<img src="./images/image-20210221101152845.png" alt="image-20210221101152845" style="zoom:30%;" />
+<img src="./assets/image-20210221101152845.png" alt="image-20210221101152845" style="zoom:30%;" />
 
 
 
@@ -3678,7 +3678,7 @@ HTTP 和 WebSocket 的连接通信比较图：
 
 下面是一些地址的同源判断示例：
 
-![image-20210221103114013](./images/image-20210221103114013.png)
+![image-20210221103114013](./assets/image-20210221103114013.png)
 
 
 
@@ -3799,7 +3799,7 @@ app.configure(function() {
 
 现在的后端服务程序，通常会使用 Nginx 进行反向代理：
 
-<img src="./images/image-20210221111025585.png" alt="image-20210221111025585" style="zoom:33%;" />
+<img src="./assets/image-20210221111025585.png" alt="image-20210221111025585" style="zoom:33%;" />
 
 反向代理的原理其实很简单：
 
@@ -3887,7 +3887,7 @@ Babel 的主要工作是对代码进行转译。
 
 转译流程示意图：
 
-![image-20210221114506275](./images/image-20210221114506275.png)
+![image-20210221114506275](./assets/image-20210221114506275.png)
 
 
 
@@ -4160,7 +4160,7 @@ hotfix 分⽀是从某个已经发布的 Tag 上创建出来来，用于紧急�
 
 **使用 Merge**
 
-<img src="./images/image-20210222132936016.png" alt="image-20210222132936016" style="zoom:30%;" />
+<img src="./assets/image-20210222132936016.png" alt="image-20210222132936016" style="zoom:30%;" />
 
 `merge` 会⾃动创建⼀个新的 `commit`， 如果合并时遇到冲突的话，只需要修改后重新 `commit`。 
 
@@ -4171,7 +4171,7 @@ hotfix 分⽀是从某个已经发布的 Tag 上创建出来来，用于紧急�
 
 **使用 Rebase**
 
-<img src="./images/image-20210222133524146.png" alt="image-20210222133524146" style="zoom:30%;" />
+<img src="./assets/image-20210222133524146.png" alt="image-20210222133524146" style="zoom:30%;" />
 
 `rebase` 会合并之前的 `commit` 历史。 
 
@@ -4197,7 +4197,7 @@ Model-View-ViewModel 模式，最早在 2005 年微软推出的基于 Windows �
 
 
 
-<img src="./images/image-20210223221853817.png" alt="image-20210223221853817" style="zoom:100%;" />
+<img src="./assets/image-20210223221853817.png" alt="image-20210223221853817" style="zoom:100%;" />
 
 
 
@@ -4286,7 +4286,7 @@ ViewModel 底层会做好绑定属性的监听，当 ViewModel 中的数据变�
 
 **生命周期示意图**
 
-<img src="./images/image-20210224084130350.png" alt="image-20210224084130350"  />
+<img src="./assets/image-20210224084130350.png" alt="image-20210224084130350"  />
 
 
 
@@ -4423,7 +4423,7 @@ vue3.0 数据劫持:  Proxy   (es6)
 
 下图为Vue框架在数据初始化中使用观察者模式的示意图： 
 
-![image-20201208122803496](./images/image-20201208122803496.png)
+![image-20201208122803496](./assets/image-20201208122803496.png)
 
 Dep要进行 **依赖收集**，并通过一个subs数组, 记录观察者Watcher,  
 
@@ -4804,7 +4804,7 @@ setState(partialState, callback)
 
 可以借助 `Redux` 或 `Mobx` 等全局状态管理⼯具进⾏通信，它们会维护⼀个全局状态中⼼（Store），并可以根据不同的事件产⽣新的状态。
 
-<img src="./images/image-20210223093430679.png" alt="image-20210223093430679" style="zoom:30%;" /> 
+<img src="./assets/image-20210223093430679.png" alt="image-20210223093430679" style="zoom:30%;" /> 
 
 
 
@@ -4915,7 +4915,7 @@ React 中的组件抽象的技术有以下几种:
 
 **⼯作流程**
 
-<img src="./images/image-20210223103127034.png" alt="image-20210223103127034" style="zoom:90%;" />
+<img src="./assets/image-20210223103127034.png" alt="image-20210223103127034" style="zoom:90%;" />
 
 ⼀次⽤户交互的流程如下：
 
@@ -4951,7 +4951,7 @@ Provider 的作⽤是从最外部封装了整个应⽤，并向 `connect` 模块
 
 **流程图**
 
-![image-20210223104924017](./images/image-20210223104924017.png)
+![image-20210223104924017](./assets/image-20210223104924017.png)
 
 
 

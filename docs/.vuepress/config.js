@@ -138,7 +138,10 @@ module.exports = {
               title: "js面试",
               path: "/page/js/jsInterview",
             },
-            { title: "前端面试要点", path: "/page/js/jsInterviewPoints" },
+            {
+              title: "前端面试要点",
+              path: "/page/interview/Front-endinterviewmanual",
+            },
           ],
         },
         {
