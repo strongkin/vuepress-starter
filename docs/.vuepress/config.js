@@ -35,6 +35,7 @@ module.exports = {
     // }
     nav: [
       { text: "首页", link: "/" },
+      { text: "java", link: "/java/" },
       {
         text: "面试集合",
         link: "/page/js/",
@@ -502,6 +503,168 @@ module.exports = {
             { title: "结算中心模块", path: "/vue/rabbit/09-结算中心模块" },
           ],
           initialOpenGroupIndex: -1,
+        },
+      ],
+      "/java/": [
+        {
+          title: "java",
+          path: "/java/01-02java/",
+          collapsable: false, // 不折叠
+          children: [
+            {
+              title: "java基础",
+              path: "/java/01-02java/Java1/",
+              collapsable: false, // 不折叠
+              children: [
+                {
+                  title: "java基础语法",
+                  path: "/java/01-02java/Java1/day01_Java/笔记/day01-java基础语法",
+                },
+                {
+                  title: "java基础语法2",
+                  path: "/java/01-02java/Java1/day02_运算符/笔记/day02-Java基础语法",
+                },
+                {
+                  title: "switch&循环语句",
+                  path: "/java/01-02java/Java1/day03_循环/讲义-md版本/day03 switch&循环语句",
+                },
+                {
+                  title: "IDEA&数组",
+                  path: "/java/01-02java/Java1/day04_IDEA和数组/讲义-md版本/day04 IDEA&数组",
+                },
+                {
+                  title: "方法",
+                  path: "/java/01-02java/Java1/day05_方法/讲义-md版本/day05 方法",
+                },
+                {
+                  title: "Debug&基础练习",
+                  path: "/java/01-02java/Java1/day06_Debug&进制&二维数组/讲义-md版本/day06 Debug&基础练习",
+                },
+              ],
+            },
+            {
+              title: "面向对象基础",
+              path: "/java/01-02java/2.面向对象基础/day07_面向对象基础/讲义-md版本/day07 面向对象",
+            },
+            {
+              title: "API基础",
+              path: "/java/01-02java/3.API基础/day08_常用API/讲义-md版本/day08 常用API",
+            },
+            {
+              title: "集合基础",
+              path: "/java/01-02java/4.集合基础/day09_学生管理系统/讲义-md版本/day09 ArrayList&学生管理系统",
+            },
+            {
+              title: "Git",
+              path: "/java/01-02java/5.Git/day10_Git/笔记/day01Git",
+            },
+            {
+              title: "面向对象进阶",
+              path: "/java/01-02java/06.面向对象进阶/day11_分类和static/笔记/day02-分类和static",
+              collapsable: false, // 不折叠
+              children: [
+                {
+                  title: "分类和static",
+                  path: "/java/01-02java/06.面向对象进阶/day11_分类和static/笔记/day02-分类和static",
+                },
+                {
+                  title: "继承",
+                  path: "/java/01-02java/06.面向对象进阶/day12_继承/笔记/day03-继承",
+                },
+                {
+                  title: "接口和内部类",
+                  path: "/java/01-02java/06.面向对象进阶/day13_接口和内部类/笔记/day04-接口和内部类",
+                },
+              ],
+            },
+            {
+              title: "常用API&异常",
+              path: "/java/01-02java/07.常用API&异常/day05-APIday01/笔记/day05-常用API01",
+              collapsable: false, // 不折叠
+              children: [
+                {
+                  title: "常用API&异常",
+                  path: "/java/01-02java/07.常用API&异常/day05-APIday01/笔记/day05-常用API01",
+                },
+                {
+                  title: "常用API&异常",
+                  path: "/java/01-02java/07.常用API&异常/day06-APIday02/笔记/day06-常用API02",
+                },
+              ],
+            },
+            {
+              title: "集合",
+              path: "/java/01-02java/08.集合/day16_集合01/笔记/day07集合01",
+              collapsable: false, // 不折叠
+              children: [
+                {
+                  title: "集合1",
+                  path: "/java/01-02java/08.集合/day16_集合01/笔记/day07集合01",
+                },
+                {
+                  title: "集合2",
+                  path: "/java/01-02java/08.集合/day17_集合02/笔记/day08集合02",
+                },
+                {
+                  title: "集合2",
+                  path: "/java/01-02java/08.集合/day18_集合03/笔记/day09集合03",
+                },
+              ],
+            },
+            {
+              title: "IO流",
+              path: "/java/01-02java/09.IO流/day11-IO流day01/笔记/day10IO流01",
+              collapsable: false, // 不折叠
+              children: [
+                {
+                  title: "IO流",
+                  path: "/java/01-02java/09.IO流/day11-IO流day01/笔记/day10IO流01",
+                },
+                {
+                  title: "IO流",
+                  path: "/java/01-02java/09.IO流/day12-IO流day02/笔记/day11IO流02",
+                },
+              ],
+            },
+            {
+              title: "多线程",
+              path: "/java/01-02java/10.多线程/day13-多线程day01/笔记/day12-多线程01",
+              collapsable: false, // 不折叠
+              children: [
+                {
+                  title: "多线程",
+                  path: "/java/01-02java/10.多线程/day13-多线程day01/笔记/day12-多线程01",
+                },
+                {
+                  title: "多线程",
+                  path: "/java/01-02java/10.多线程/day14-多线程day02/笔记/day12 多线程02",
+                },
+              ],
+            },
+            {
+              title: "网络编程",
+              path: "/java/01-02java/11.网络编程/day15-网络编程day01/笔记/day14-网络编程",
+            },
+            {
+              title: "基础加强",
+              path: "/java/01-02java/12.基础加强/day25-基础加强01/笔记/day16-基础加强01",
+              collapsable: false, // 不折叠
+              children: [
+                {
+                  title: "基础加强",
+                  path: "/java/01-02java/12.基础加强/day25-基础加强01/笔记/day16-基础加强01",
+                },
+                {
+                  title: "基础加强",
+                  path: "/java/01-02java/12.基础加强/day26-基础加强02/笔记/day17-基础加强02",
+                },
+                {
+                  title: "基础加强",
+                  path: "/java/01-02java/12.基础加强/day27_基础加强03/笔记/day18-基础加强03",
+                },
+              ],
+            },
+          ],
         },
       ],
     },
