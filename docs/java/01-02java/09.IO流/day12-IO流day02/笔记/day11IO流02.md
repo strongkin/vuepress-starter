@@ -401,7 +401,7 @@
 
 + IO流小结
 
-  ![01_IO流小结](./img/01_IO.png)
+  ![](./img/01_IO.png)
 
 
 ## 2.转换流
@@ -807,13 +807,13 @@
 ### 4.2Properties作为Map集合的特有方法【应用】
 
 - 特有方法
-
+```java
   | 方法名                                      | 说明                                       |
   | ---------------------------------------- | ---------------------------------------- |
   | Object   setProperty(String key, String value) | 设置集合的键和值，都是String类型，底层调用   Hashtable方法 put |
   | String   getProperty(String key)         | 使用此属性列表中指定的键搜索属性                         |
   | Set<String>   stringPropertyNames()      | 从该属性列表中返回一个不可修改的键集，其中键及其对应的值是字符串         |
-
+```
 - 示例代码
 
   ```java
