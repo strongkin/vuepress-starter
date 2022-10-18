@@ -21,7 +21,7 @@
 
 引用数据类型在栈中存储了指针，该指针指向堆中该实体的起始地址。当解释器寻找引用值时，会首先检索其在栈中的地址，取得地址后从堆中获得实体。
 
-![](images/基本数据类型与引用类型.png)
+![](./images/base1.png)
 
 下面我们先来回顾基本数据类型的内容，后面再复习引用类型的内容，以及看一下对应的常见的面试题。
 
@@ -1425,13 +1425,13 @@ Person.prototype.sayName = function(){
 
 下面我们来看一下它们之间的关系。
 
-![](images/prototype.png)
+![](./images/prototype.png)
 
 
 
 **简易图**
 
-![](images\简易prototype.png)
+![](./images/1-prototype.png)
 
 #### constructor 属性
 
@@ -1446,13 +1446,13 @@ console.log(Person.prototype.constructor == Person)
 
 下面我们来更新一下它们之间的关系图。
 
-![](images\constructor.png)
+![](./images/constructor.png)
 
 
 
   	**简易图**
 
-![](images\constructor.jpg)
+![](./images/constructor.jpg)
 
 
 
@@ -1474,7 +1474,7 @@ console.log(student.__proto__ === Person.prototype); // true
 
 下面我们来看一下现在这几个对象之间的关系
 
-![](images/proto.png)
+![](./images/proto.png)
 
 `isPrototypeOf()` 方法用于测试一个对象是否存在于另一个对象的原型链上。
 
@@ -1485,7 +1485,7 @@ console.log(Person.prototype.isPrototypeOf(student)); // true
 
 **简易图**
 
-![](images\proto.jpg)
+![](./images/proto.jpg)
 
 
 
@@ -1870,7 +1870,7 @@ Object.prototype.__proto__===null
 
 具体的图如下所示：
 
-![](images/原型链1.png)
+![](./images/prototype1.png)
 
 
 
@@ -1896,13 +1896,13 @@ var suber = new Sub();
 
 对应的原型链如下图所示：
 
-![](images/原型链2.png)
+![](./images/prototype2.png)
 
 
 
 上面的图其实并不完整，因为漏掉了`Object`.所以完整的图如下
 
-![](images/原型链3.png)
+![](./images/prototype3.png)
 
 
 
@@ -3217,7 +3217,7 @@ sum(2,6)
 
 下面，我们再来看一个比较复杂的结构图，来体验一下作用域
 
-![](images/作用域.png)
+![](./images/scopeofeffect.png)
 
 - 作用域链
 
@@ -3236,11 +3236,11 @@ sum(2,6)
 
 如下图所示：
 
-![](images/作用域链.png)
+![](./images/scopeofeffect1.png)
 
 对应的代码如下：
 
-![](images/作用域链2.png)
+![](./images/scopeofeffect2.png)
 
 ### 面试中关于作用域与作用域链的问题
 
