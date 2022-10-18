@@ -153,7 +153,7 @@ module.exports = {
             {
               title: "js基础",
               path: "/page/js/js基础/js1/JavaScript基础第01天笔记",
-              collapsable: true, // 折叠
+              collapsable: false, // 折叠
               children: [
                 {
                   title: "js基础1",
@@ -183,7 +183,7 @@ module.exports = {
             },
             {
               title: "js高级",
-              // path: "/page/js/js高级/js1/JavaScript高级第01天笔记",
+              path: "/page/js/js高级/js1/JavaScript高级第01天笔记",
               collapsable: false, // 折叠
               children: [
                 {
