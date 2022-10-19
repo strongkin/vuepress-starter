@@ -709,45 +709,45 @@ module.exports = {
             // { title: "mysql高级", path: "/java/java-03/day02/讲义/mysql高级" },
           ],
         },
-        {
-          title: "java4",
-          path: "/java/java-04/1-spring/day01/讲义/Spring第一天",
-          collapsable: false, // 不折叠
-          children: [
-            {
-              title: "spring1",
-              path: "/java/java-04/1-spring/day01/讲义/Spring第一天",
-            },
-            {
-              title: "spring2",
-              path: "/java/java-04/1-spring/day02/讲义/Spring第二天",
-            },
-            {
-              title: "spring3",
-              path: "/java/java-04/1-spring/day03/讲义/Spring第三天",
-            },
-            {
-              title: "SpringMVC第一天",
-              path: "/java/java-04/2-springmvc/day01/讲义/SpringMVC第一天",
-            },
-            {
-              title: "SpringMVC第二天",
-              path: "/java/java-04/2-springmvc/day02/讲义/SpringMVC第二天",
-            },
-            {
-              title: "SpringBoot笔记",
-              path: "/java/java-04/3-springboot/day01/讲义/SpringBoot笔记",
-            },
-            {
-              title: "MyBatisPlus笔记",
-              path: "/java/java-04/4-mybatisplus/day01/讲义/MyBatisPlus笔记",
-            },
-            {
-              title: "Maven进阶笔记",
-              path: "/java/java-04/5-maven/day01/讲义/Maven进阶笔记",
-            },
-          ],
-        },
+        // {
+        //   title: "java4",
+        //   path: "/java/java-04/1-spring/day01/讲义/Spring第一天",
+        //   collapsable: false, // 不折叠
+        //   children: [
+        //     {
+        //       title: "spring1",
+        //       path: "/java/java-04/1-spring/day01/讲义/Spring第一天",
+        //     },
+        //     {
+        //       title: "spring2",
+        //       path: "/java/java-04/1-spring/day02/讲义/Spring第二天",
+        //     },
+        //     {
+        //       title: "spring3",
+        //       path: "/java/java-04/1-spring/day03/讲义/Spring第三天",
+        //     },
+        //     {
+        //       title: "SpringMVC第一天",
+        //       path: "/java/java-04/2-springmvc/day01/讲义/SpringMVC第一天",
+        //     },
+        //     {
+        //       title: "SpringMVC第二天",
+        //       path: "/java/java-04/2-springmvc/day02/讲义/SpringMVC第二天",
+        //     },
+        //     {
+        //       title: "SpringBoot笔记",
+        //       path: "/java/java-04/3-springboot/day01/讲义/SpringBoot笔记",
+        //     },
+        //     {
+        //       title: "MyBatisPlus笔记",
+        //       path: "/java/java-04/4-mybatisplus/day01/讲义/MyBatisPlus笔记",
+        //     },
+        //     {
+        //       title: "Maven进阶笔记",
+        //       path: "/java/java-04/5-maven/day01/讲义/Maven进阶笔记",
+        //     },
+        //   ],
+        // },
       ],
     },
   },

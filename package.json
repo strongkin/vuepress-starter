@@ -6,7 +6,6 @@
   "devDependencies": {
     "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.6.13",
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
-    "increase-memory-limit": "^1.0.7",
     "vuepress": "^1.9.7"
   },
   "scripts": {
