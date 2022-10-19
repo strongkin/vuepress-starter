@@ -666,6 +666,49 @@ module.exports = {
             },
           ],
         },
+        {
+          title: "java3",
+          path: "/java/java-03/day01/讲义/mysql基础",
+          collapsable: false, // 不折叠
+          children: [
+            { title: "mysql基础", path: "/java/java-03/day01/讲义/mysql基础" },
+            { title: "mysql高级", path: "/java/java-03/day02/讲义/mysql高级" },
+            {
+              title: "JDBC",
+              path: "/java/java-03/day03-JDBC/讲义/JDBC",
+            },
+            {
+              title: "Mybatis",
+              path: "/java/java-03/day05-Mybatis/讲义/Mybatis",
+            },
+            {
+              title: "HTML&CSS",
+              path: "/java/java-03/day06-HTML&CSS/讲义/HTML&CSS",
+            },
+            {
+              title: "JavaScript",
+              path: "/java/java-03/day07-JavaScript/讲义/JavaScript",
+            },
+            {
+              title: "HTTP&Tomcat&Servlet",
+              path: "/java/java-03/day08-HTTP&Tomcat&Servlet/讲义/HTTP&Tomcat&Servlet",
+            },
+            {
+              title: "Request&Response",
+              path: "/java/java-03/day09/讲义/Request&Response",
+            },
+            {
+              title: "JSP",
+              path: "/java/java-03/day10-JSP/讲义/JSP",
+            },
+
+            {
+              title: "Filter&Listener&Ajax",
+              path: "/java/java-03/day12-Filter&Listener&AJAX/讲义/Filter&Listener&Ajax",
+            },
+            // { title: "mysql高级", path: "/java/java-03/day02/讲义/mysql高级" },
+          ],
+        },
       ],
     },
   },
