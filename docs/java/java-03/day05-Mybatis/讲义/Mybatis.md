@@ -446,7 +446,7 @@ mybatis提供了两种参数占位符：
 
   <img src="./assets/image-20210729185128686.png" alt="image-20210729185128686" style="zoom:60%;" />
 
-* <![CDATA[内容]]>
+<!-- * <![CDATA[内容]]> -->
 
   <img src="./assets/image-20210729185030318.png" alt="image-20210729185030318" style="zoom:60%;" />
 

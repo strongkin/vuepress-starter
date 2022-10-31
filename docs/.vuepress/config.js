@@ -414,6 +414,7 @@ module.exports = {
             { title: "虚拟DOM", path: "/vue/vueVirtualDom" },
             // { title: "服务端渲染", path: "/vue/rendering" },
             { title: "响应式原理", path: "/vue/vueResponed" },
+            { title: "pinia", path: "/vue/Pinia" },
           ],
         },
         {

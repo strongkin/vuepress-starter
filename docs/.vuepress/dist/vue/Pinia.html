@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TS文档</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/vuepress-starter/images/good.png">
+    <meta name="description" content="TS文档翻译">
+    
+    <link rel="preload" href="/vuepress-starter/assets/css/0.styles.e83b6921.css" as="style"><link rel="preload" href="/vuepress-starter/assets/js/app.4f332f4f.js" as="script"><link rel="preload" href="/vuepress-starter/assets/js/20.641559b0.js" as="script"><link rel="preload" href="/vuepress-starter/assets/js/1.0b8de66f.js" as="script"><link rel="preload" href="/vuepress-starter/assets/js/156.642c33ac.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/js/10.0069e25c.js"><link rel="prefetch" href="/vuepress-starter/assets/js/100.5f241981.js"><link rel="prefetch" href="/vuepress-starter/assets/js/101.d848a5f8.js"><link rel="prefetch" href="/vuepress-starter/assets/js/102.01197d0b.js"><link rel="prefetch" href="/vuepress-starter/assets/js/103.9a71fe1f.js"><link rel="prefetch" href="/vuepress-starter/assets/js/104.26278b30.js"><link rel="prefetch" href="/vuepress-starter/assets/js/105.c4fe860a.js"><link rel="prefetch" href="/vuepress-starter/assets/js/106.55839e0a.js"><link rel="prefetch" href="/vuepress-starter/assets/js/107.5e9f3889.js"><link rel="prefetch" href="/vuepress-starter/assets/js/108.5f29e3de.js"><link rel="prefetch" href="/vuepress-starter/assets/js/109.a85d25b5.js"><link rel="prefetch" href="/vuepress-starter/assets/js/11.30d09cc7.js"><link rel="prefetch" href="/vuepress-starter/assets/js/110.af6b866c.js"><link rel="prefetch" href="/vuepress-starter/assets/js/111.9a96ec03.js"><link rel="prefetch" href="/vuepress-starter/assets/js/112.3ad283cf.js"><link rel="prefetch" href="/vuepress-starter/assets/js/113.c8eebf08.js"><link rel="prefetch" href="/vuepress-starter/assets/js/114.415e0ace.js"><link rel="prefetch" href="/vuepress-starter/assets/js/115.4a043fbf.js"><link rel="prefetch" href="/vuepress-starter/assets/js/116.1f47da63.js"><link rel="prefetch" href="/vuepress-starter/assets/js/117.27c22eda.js"><link rel="prefetch" href="/vuepress-starter/assets/js/118.ecc6f8fa.js"><link rel="prefetch" href="/vuepress-starter/assets/js/119.487d653b.js"><link rel="prefetch" href="/vuepress-starter/assets/js/12.b7c4fbd5.js"><link rel="prefetch" href="/vuepress-starter/assets/js/120.87668806.js"><link rel="prefetch" href="/vuepress-starter/assets/js/121.ed6cd5c2.js"><link rel="prefetch" href="/vuepress-starter/assets/js/122.e24092eb.js"><link rel="prefetch" href="/vuepress-starter/assets/js/123.c7fb33e3.js"><link rel="prefetch" href="/vuepress-starter/assets/js/124.94a0a2d2.js"><link rel="prefetch" href="/vuepress-starter/assets/js/125.6fbe0cf7.js"><link rel="prefetch" href="/vuepress-starter/assets/js/126.79f48c4b.js"><link rel="prefetch" href="/vuepress-starter/assets/js/127.570ba4cd.js"><link rel="prefetch" href="/vuepress-starter/assets/js/128.887af4f6.js"><link rel="prefetch" href="/vuepress-starter/assets/js/129.c2176f4a.js"><link rel="prefetch" href="/vuepress-starter/assets/js/13.708af101.js"><link rel="prefetch" href="/vuepress-starter/assets/js/130.5f0522b7.js"><link rel="prefetch" href="/vuepress-starter/assets/js/131.d9aeab32.js"><link rel="prefetch" href="/vuepress-starter/assets/js/132.47d55493.js"><link rel="prefetch" href="/vuepress-starter/assets/js/133.93454493.js"><link rel="prefetch" href="/vuepress-starter/assets/js/134.244850c2.js"><link rel="prefetch" href="/vuepress-starter/assets/js/135.a648b476.js"><link rel="prefetch" href="/vuepress-starter/assets/js/136.31dd085b.js"><link rel="prefetch" href="/vuepress-starter/assets/js/137.4052a8c3.js"><link rel="prefetch" href="/vuepress-starter/assets/js/138.eba89521.js"><link rel="prefetch" href="/vuepress-starter/assets/js/139.8eedc456.js"><link rel="prefetch" href="/vuepress-starter/assets/js/14.e47651df.js"><link rel="prefetch" href="/vuepress-starter/assets/js/140.cf426657.js"><link rel="prefetch" href="/vuepress-starter/assets/js/141.8fe5429d.js"><link rel="prefetch" href="/vuepress-starter/assets/js/142.a16b0b1f.js"><link rel="prefetch" href="/vuepress-starter/assets/js/143.b1f1d74a.js"><link rel="prefetch" href="/vuepress-starter/assets/js/144.2e1b63f7.js"><link rel="prefetch" href="/vuepress-starter/assets/js/145.c0b33d74.js"><link rel="prefetch" href="/vuepress-starter/assets/js/146.fe7a79c9.js"><link rel="prefetch" href="/vuepress-starter/assets/js/147.8ec373cf.js"><link rel="prefetch" href="/vuepress-starter/assets/js/148.cef08fb8.js"><link rel="prefetch" href="/vuepress-starter/assets/js/149.2e9bf1f4.js"><link rel="prefetch" href="/vuepress-starter/assets/js/15.005b4121.js"><link rel="prefetch" href="/vuepress-starter/assets/js/150.9d7aafd2.js"><link rel="prefetch" href="/vuepress-starter/assets/js/151.c0854f92.js"><link rel="prefetch" href="/vuepress-starter/assets/js/152.101271f4.js"><link rel="prefetch" href="/vuepress-starter/assets/js/153.48187a99.js"><link rel="prefetch" href="/vuepress-starter/assets/js/154.c20a9554.js"><link rel="prefetch" href="/vuepress-starter/assets/js/155.b6ff14ea.js"><link rel="prefetch" href="/vuepress-starter/assets/js/157.629ac36e.js"><link rel="prefetch" href="/vuepress-starter/assets/js/158.d90faefe.js"><link rel="prefetch" href="/vuepress-starter/assets/js/159.28f35bae.js"><link rel="prefetch" href="/vuepress-starter/assets/js/16.984c4ceb.js"><link rel="prefetch" href="/vuepress-starter/assets/js/160.534f295c.js"><link rel="prefetch" href="/vuepress-starter/assets/js/17.4b2dd795.js"><link rel="prefetch" href="/vuepress-starter/assets/js/18.a0717979.js"><link rel="prefetch" href="/vuepress-starter/assets/js/19.e805d43c.js"><link rel="prefetch" href="/vuepress-starter/assets/js/2.dea2f683.js"><link rel="prefetch" href="/vuepress-starter/assets/js/21.978f457b.js"><link rel="prefetch" href="/vuepress-starter/assets/js/22.20778bd8.js"><link rel="prefetch" href="/vuepress-starter/assets/js/23.1229b121.js"><link rel="prefetch" href="/vuepress-starter/assets/js/24.cdcc6732.js"><link rel="prefetch" href="/vuepress-starter/assets/js/25.f21250fe.js"><link rel="prefetch" href="/vuepress-starter/assets/js/26.9106cc90.js"><link rel="prefetch" href="/vuepress-starter/assets/js/27.8e629eb5.js"><link rel="prefetch" href="/vuepress-starter/assets/js/28.771592d2.js"><link rel="prefetch" href="/vuepress-starter/assets/js/29.8483b7cf.js"><link rel="prefetch" href="/vuepress-starter/assets/js/30.b246c1bb.js"><link rel="prefetch" href="/vuepress-starter/assets/js/31.602d70c3.js"><link rel="prefetch" href="/vuepress-starter/assets/js/32.d793a2cd.js"><link rel="prefetch" href="/vuepress-starter/assets/js/33.241890df.js"><link rel="prefetch" href="/vuepress-starter/assets/js/34.cf11a3d0.js"><link rel="prefetch" href="/vuepress-starter/assets/js/35.933090ec.js"><link rel="prefetch" href="/vuepress-starter/assets/js/36.17b2b5e4.js"><link rel="prefetch" href="/vuepress-starter/assets/js/37.fc8e7032.js"><link rel="prefetch" href="/vuepress-starter/assets/js/38.70332ec6.js"><link rel="prefetch" href="/vuepress-starter/assets/js/39.9ff08c11.js"><link rel="prefetch" href="/vuepress-starter/assets/js/4.5cf51905.js"><link rel="prefetch" href="/vuepress-starter/assets/js/40.eda29966.js"><link rel="prefetch" href="/vuepress-starter/assets/js/41.ea5b3451.js"><link rel="prefetch" href="/vuepress-starter/assets/js/42.031684a9.js"><link rel="prefetch" href="/vuepress-starter/assets/js/43.4631fe63.js"><link rel="prefetch" href="/vuepress-starter/assets/js/44.b6ee7c50.js"><link rel="prefetch" href="/vuepress-starter/assets/js/45.6d3e0ef5.js"><link rel="prefetch" href="/vuepress-starter/assets/js/46.1d130f2c.js"><link rel="prefetch" href="/vuepress-starter/assets/js/47.388c9609.js"><link rel="prefetch" href="/vuepress-starter/assets/js/48.0ed163d8.js"><link rel="prefetch" href="/vuepress-starter/assets/js/49.43ae0df4.js"><link rel="prefetch" href="/vuepress-starter/assets/js/5.c08fd88b.js"><link rel="prefetch" href="/vuepress-starter/assets/js/50.018995e8.js"><link rel="prefetch" href="/vuepress-starter/assets/js/51.6cd89e89.js"><link rel="prefetch" href="/vuepress-starter/assets/js/52.d86c111e.js"><link rel="prefetch" href="/vuepress-starter/assets/js/53.bc010464.js"><link rel="prefetch" href="/vuepress-starter/assets/js/54.daa0b9cb.js"><link rel="prefetch" href="/vuepress-starter/assets/js/55.bc98369d.js"><link rel="prefetch" href="/vuepress-starter/assets/js/56.be76b3af.js"><link rel="prefetch" href="/vuepress-starter/assets/js/57.5e540932.js"><link rel="prefetch" href="/vuepress-starter/assets/js/58.882ae44b.js"><link rel="prefetch" href="/vuepress-starter/assets/js/59.09c93a17.js"><link rel="prefetch" href="/vuepress-starter/assets/js/6.6d7a9afc.js"><link rel="prefetch" href="/vuepress-starter/assets/js/60.75461123.js"><link rel="prefetch" href="/vuepress-starter/assets/js/61.25ac1c70.js"><link rel="prefetch" href="/vuepress-starter/assets/js/62.c67710fd.js"><link rel="prefetch" href="/vuepress-starter/assets/js/63.f93ebb5d.js"><link rel="prefetch" href="/vuepress-starter/assets/js/64.7e59ed08.js"><link rel="prefetch" href="/vuepress-starter/assets/js/65.e97dca37.js"><link rel="prefetch" href="/vuepress-starter/assets/js/66.fa2284a5.js"><link rel="prefetch" href="/vuepress-starter/assets/js/67.fe91af99.js"><link rel="prefetch" href="/vuepress-starter/assets/js/68.848b2fe7.js"><link rel="prefetch" href="/vuepress-starter/assets/js/69.a4881569.js"><link rel="prefetch" href="/vuepress-starter/assets/js/7.307e8802.js"><link rel="prefetch" href="/vuepress-starter/assets/js/70.24d8b0a2.js"><link rel="prefetch" href="/vuepress-starter/assets/js/71.e9166e3b.js"><link rel="prefetch" href="/vuepress-starter/assets/js/72.9601b8b3.js"><link rel="prefetch" href="/vuepress-starter/assets/js/73.3386652e.js"><link rel="prefetch" href="/vuepress-starter/assets/js/74.b979b5f1.js"><link rel="prefetch" href="/vuepress-starter/assets/js/75.558482f0.js"><link rel="prefetch" href="/vuepress-starter/assets/js/76.7a2c1ea0.js"><link rel="prefetch" href="/vuepress-starter/assets/js/77.166a8b81.js"><link rel="prefetch" href="/vuepress-starter/assets/js/78.f195e02d.js"><link rel="prefetch" href="/vuepress-starter/assets/js/79.ee790d1a.js"><link rel="prefetch" href="/vuepress-starter/assets/js/8.c98911ed.js"><link rel="prefetch" href="/vuepress-starter/assets/js/80.75e66b20.js"><link rel="prefetch" href="/vuepress-starter/assets/js/81.d69a5653.js"><link rel="prefetch" href="/vuepress-starter/assets/js/82.e898fac5.js"><link rel="prefetch" href="/vuepress-starter/assets/js/83.13cf0aae.js"><link rel="prefetch" href="/vuepress-starter/assets/js/84.f229d654.js"><link rel="prefetch" href="/vuepress-starter/assets/js/85.d0455b63.js"><link rel="prefetch" href="/vuepress-starter/assets/js/86.5834cee0.js"><link rel="prefetch" href="/vuepress-starter/assets/js/87.0f784a35.js"><link rel="prefetch" href="/vuepress-starter/assets/js/88.ecca68a5.js"><link rel="prefetch" href="/vuepress-starter/assets/js/89.19216747.js"><link rel="prefetch" href="/vuepress-starter/assets/js/9.a3ea03d8.js"><link rel="prefetch" href="/vuepress-starter/assets/js/90.836d28ee.js"><link rel="prefetch" href="/vuepress-starter/assets/js/91.dd076332.js"><link rel="prefetch" href="/vuepress-starter/assets/js/92.6a9c5a22.js"><link rel="prefetch" href="/vuepress-starter/assets/js/93.5e0e06f3.js"><link rel="prefetch" href="/vuepress-starter/assets/js/94.e42e2e2d.js"><link rel="prefetch" href="/vuepress-starter/assets/js/95.0909d91b.js"><link rel="prefetch" href="/vuepress-starter/assets/js/96.14722e3c.js"><link rel="prefetch" href="/vuepress-starter/assets/js/97.74210871.js"><link rel="prefetch" href="/vuepress-starter/assets/js/98.f6bc7649.js"><link rel="prefetch" href="/vuepress-starter/assets/js/99.1b960226.js">
+    <link rel="stylesheet" href="/vuepress-starter/assets/css/0.styles.e83b6921.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>TS文档</h3> <p class="description" data-v-59e6cb88>TS文档翻译</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2022
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-starter/" class="home-link router-link-active"><img src="/vuepress-starter/images/good.png" alt="TS文档" class="logo"> <span class="site-name">TS文档</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress-starter/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><a href="/vuepress-starter/java/" class="nav-link"><i class="undefined"></i>
+  java
+</a></div><div class="nav-item"><a href="/vuepress-starter/page/js/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></div><div class="nav-item"><a href="/vuepress-starter/handbook/ConditionalTypes.html" class="nav-link"><i class="undefined"></i>
+  vue组件
+</a></div><div class="nav-item"><a href="/vuepress-starter/vue/vuebase.html" class="nav-link"><i class="undefined"></i>
+  vue学习
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+       JavaScript 博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/strongkin" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/vuepress-starter/images/good.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <!----> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>140</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>0</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/vuepress-starter/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><a href="/vuepress-starter/java/" class="nav-link"><i class="undefined"></i>
+  java
+</a></div><div class="nav-item"><a href="/vuepress-starter/page/js/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></div><div class="nav-item"><a href="/vuepress-starter/handbook/ConditionalTypes.html" class="nav-link"><i class="undefined"></i>
+  vue组件
+</a></div><div class="nav-item"><a href="/vuepress-starter/vue/vuebase.html" class="nav-link"><i class="undefined"></i>
+  vue学习
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+       JavaScript 博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/strongkin" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>vue学习</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-starter/vue/vuebase.html" class="sidebar-link">vue基础</a></li><li><a href="/vuepress-starter/vue/vuex.html" class="sidebar-link">vuex</a></li><li><a href="/vuepress-starter/vue/vueRouter.html" class="sidebar-link">vueRouter路由</a></li><li><a href="/vuepress-starter/vue/vueSource.html" class="sidebar-link">vue源码</a></li><li><a href="/vuepress-starter/vue/vueInterview.html" class="sidebar-link">vue面试</a></li><li><a href="/vuepress-starter/vue/vue3.html" class="sidebar-link">vue3</a></li><li><a href="/vuepress-starter/vue/vueVirtualDom.html" class="sidebar-link">虚拟DOM</a></li><li><a href="/vuepress-starter/vue/vueResponed.html" class="sidebar-link">响应式原理</a></li><li><a href="/vuepress-starter/vue/Pinia.html" aria-current="page" class="active sidebar-link">pinia</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>人力管理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-starter/vue/hrsaas/01-vuex基础.html" class="sidebar-link">vuex基础</a></li><li><a href="/vuepress-starter/vue/hrsaas/02-基础环境搭建.html" class="sidebar-link">基础环境搭建</a></li><li><a href="/vuepress-starter/vue/hrsaas/03-登录模块.html" class="sidebar-link">登录模块</a></li><li><a href="/vuepress-starter/vue/hrsaas/04-主页模块.html" class="sidebar-link">主页模块</a></li><li><a href="/vuepress-starter/vue/hrsaas/05-路由和页面.html" class="sidebar-link">路由和页面</a></li><li><a href="/vuepress-starter/vue/hrsaas/06-组织架构.html" class="sidebar-link">组织架构</a></li><li><a href="/vuepress-starter/vue/hrsaas/07-公司和角色.html" class="sidebar-link">公司和角色</a></li><li><a href="/vuepress-starter/vue/hrsaas/08-员工管理.html" class="sidebar-link">员工管理</a></li><li><a href="/vuepress-starter/vue/hrsaas/09-权限设计和管理.html" class="sidebar-link">权限设计和管理</a></li><li><a href="/vuepress-starter/vue/hrsaas/10-其他模块集成.html" class="sidebar-link">其他模块集成</a></li><li><a href="/vuepress-starter/vue/hrsaas/11-主页审批-图表.html" class="sidebar-link">主页审批-图表</a></li><li><a href="/vuepress-starter/vue/hrsaas/12-多语言tab页全屏主题.html" class="sidebar-link">多语言tab页全屏主题</a></li><li><a href="/vuepress-starter/vue/hrsaas/13-打包上线.html" class="sidebar-link">打包上线</a></li><li><a href="/vuepress-starter/vue/hrsaas/Element表单校验补充.html" class="sidebar-link">Element表单校验补充</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>小兔仙</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-starter/vue/rabbit/00-vue3入门.html" class="sidebar-link">vue3入门</a></li><li><a href="/vuepress-starter/vue/rabbit/01-项目介绍.html" class="sidebar-link">项目介绍</a></li><li><a href="/vuepress-starter/vue/rabbit/02-项目起步.html" class="sidebar-link">项目起步</a></li><li><a href="/vuepress-starter/vue/rabbit/03-首页模块-Layout.html" class="sidebar-link">首页模块-Layout</a></li><li><a href="/vuepress-starter/vue/rabbit/04-首页模块-main主体.html" class="sidebar-link">首页模块-main主体</a></li><li><a href="/vuepress-starter/vue/rabbit/05-分类模块.html" class="sidebar-link">分类模块</a></li><li><a href="/vuepress-starter/vue/rabbit/06-详情模块.html" class="sidebar-link">详情模块</a></li><li><a href="/vuepress-starter/vue/rabbit/07-登录模块.html" class="sidebar-link">登录模块</a></li><li><a href="/vuepress-starter/vue/rabbit/08-购物车模块.html" class="sidebar-link">购物车模块</a></li><li><a href="/vuepress-starter/vue/rabbit/09-结算中心模块.html" class="sidebar-link">结算中心模块</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88></h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2022
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title"></h1> <div data-v-8a445198><!----> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><p>Pinia 基础
+img</p> <p>#概述
+#官方文档
+Pinia 官方文档：⚓https://pinia.vuejs.org/(opens new window)</p> <div class="language-js extra-class"><pre class="language-js"><code>#为什么需要 Pinia
+Pinia 作者是 Vuex 核心开发人员之一，靠谱
+Vuex <span class="token number">5</span> 的设计思想，为下一个版本 Vuex 做好准备
+Vuex <span class="token number">4</span> 对 TypeScript 支持不够友好，Pinia 完整的 TypeScript 支持
+Vuex <span class="token number">4</span> 书写起来太繁琐，异步要写 Actions，同步要写 Mutations，Pinia 做了统一，Actions 配置项可以执行同步或异步方法
+极其轻巧，体积约1KB
+支持 Vue DevTools
+对比	Pinia	Vuex <span class="token number">4</span>
+TypeScript 支持	✅	<span class="token function">❌</span><span class="token punctuation">(</span>不友好<span class="token punctuation">)</span>
+Vue DevTools 支持	✅	✅
+#Pinia 和 Vuex 的变化
+Pinia 没有了 mutations
+Pinia 模块不需要嵌套，可以声明多个Store
+Pinia 可直接获取 getters 数据
+#安装 Pinia
+# 使用 npm
+npm install pinia
+# 使用 yarn
+yarn add pinia
+创建一个 pinia（根存储）并将其传递给应用程序：
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createPinia <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'pinia'</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">createPinia</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+#核心概念与基本使用
+#核心概念
+Store，可定义多个 Store
+State ，相当于组件中 data
+Getters ，相当于组件中 computed
+Actions， 相当于组件中 methods
+#Store
+Store，可定义多个 Store
+</code></pre></div><p>#Pinia 和 Vuex 差异
+Pinia 中的 Store 作用与 Vuex 中的 Store 相同，使用略有差异。
+Pinia 支持定义多个 Store 相当于组件中 Vuex 定义多个模块。
+#Store 基本使用
+通过 defineStore() 定义 Store 。
+必须配置唯一的 id
+#参考代码
+新建 store/index.ts</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// store/index.ts</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> defineStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;pinia&quot;</span>
+
+<span class="token comment">// defineStore 调用后返回一个函数，调用该函数获得 Store 实体</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> useStore <span class="token operator">=</span> <span class="token function">defineStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// id: 必须的，在所有 Store 中唯一</span>
+  <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&quot;globalStore&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+组件中使用
+
+<span class="token comment">// xxx.vue</span>
+<span class="token operator">&lt;</span>script setup lang<span class="token operator">=</span><span class="token string">&quot;ts&quot;</span><span class="token operator">&gt;</span>
+<span class="token comment">// 导入 Store， 使用自己的路径</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@/store/index.ts&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">// 调用函数 获得 Store</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 打印检查 Store </span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>store<span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><p>#State
+State 相当于组件中 data</p> <p>#Pinia 和 Vuex 差异
+Pinia 中的 State 作用与 Vuex 中的 State 相同，使用略有差异
+Pinia 中的 State 直接在 Store 上读取，形似 store.xx，就和一般的数据读取一样
+#State 基本使用
+Getter 第一个参数是 state，是当前的状态
+Getter 也可以使用 this.xxx 获取状态
+Getter 中也可以访问其他的 Getter， 或者是其他的 Store
+#参考代码
+修改 store/index.ts</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// store/index.ts</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> defineStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;pinia&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// defineStore 调用后返回一个函数，调用该函数获得 Store 实体</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> useStore <span class="token operator">=</span> <span class="token function">defineStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// id: 必须的，在所有 Store 中唯一</span>
+  <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&quot;globalStore&quot;</span><span class="token punctuation">,</span>
+<span class="token operator">+</span>  <span class="token comment">// state: 返回对象的函数</span>
+<span class="token operator">+</span>  <span class="token function-variable function">state</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+<span class="token operator">+</span>    count<span class="token operator">:</span> <span class="token number">1</span>
+<span class="token operator">+</span>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+组件中使用
+
+<span class="token comment">// xxx.vue</span>
+<span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">{</span><span class="token punctuation">{</span>store<span class="token punctuation">.</span>count<span class="token punctuation">}</span><span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script setup lang<span class="token operator">=</span><span class="token string">&quot;ts&quot;</span><span class="token operator">&gt;</span>
+<span class="token comment">// 导入 Store， 使用自己的路径</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@/store/index.ts&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">// 调用函数 获得 Store</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 打印检查 Store </span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>store<span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><p>#Getters
+Getters 相当于组件中 computed</p> <p>#Pinia 和 Vuex 差异
+Pinia 中的 Getters 作用与 Vuex 中的 Getters 相同，但使用略有差异
+Pinia 中的 Getters 直接在 Store 上读取，形似 store.xx，就和一般的属性读取一样
+#Getter 基本使用
+Getter 第一个参数是 state，是当前的状态
+Getter 也可以使用 this.xxx 获取状态
+Getter 中也可以访问其他的 Getter， 或者是其他的 Store
+#参考代码
+修改 store/index.ts</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// store/index.ts</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> defineStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;pinia&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> otherStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@/store/otherStore.ts&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> useStore <span class="token operator">=</span> <span class="token function">defineStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&quot;globalStore&quot;</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">state</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">2</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">getters</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 一个基本的 Getter： 计算 count 的平方</span>
+    <span class="token comment">// 使用参数</span>
+    <span class="token function">countPow2</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> state<span class="token punctuation">.</span>count <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 使用 this</span>
+    <span class="token comment">/* 
+    countPow2() {
+      return this.count ** 2;
+    }, 
+    */</span>
+    <span class="token comment">// 简单的 Getter 直接使用箭头函数</span>
+    <span class="token comment">// countPow2: state=&gt; state.count ** 2</span>
+
+    <span class="token comment">// 获取其它 Getter， 直接通过 this</span>
+    <span class="token function">countPow2Getter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>countPow2<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 使用其它 Store</span>
+    <span class="token function">otherStoreCount</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 🔔这里是其他的 Store，调用获取 Store，就和在 setup 中一样</span>
+      <span class="token keyword">const</span> otherStore <span class="token operator">=</span> <span class="token function">useOtherStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> otherStore<span class="token punctuation">.</span>count<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+新建 store<span class="token operator">/</span>otherStore<span class="token punctuation">.</span>ts
+
+<span class="token comment">// store/otherStore.ts</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> defineStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;pinia&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> useStore <span class="token operator">=</span> <span class="token function">defineStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&quot;otherStore&quot;</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">state</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">msg</span><span class="token operator">:</span> <span class="token string">&quot;Nice~&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>#Actions
+Actions 相当于组件中 methods</p> <p>#Pinia 和 Vuex 差异
+Pinia 没有 Mutations，统一在 Actions 中操作 state，通过 this.xx 访问相应状态
+#Action 基本使用
+Action 和普通的函数一样
+Action 同样可以像 Getter 一样访问其他的 Store，同上方式使用其它 Store，这里不在赘述，详细请移步 官方文档 Actions(opens new window)
+#参考代码</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// store/index.ts</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function-variable function">state</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token comment">// ...</span>
+  <span class="token literal-property property">actinos</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">countPlusOne</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">countPlus</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">+=</span> num<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>🔔 温馨提醒</p> <p>虽然组件中可以直接操作 Store，但还是推荐在 actions 中操作，保证状态不被意外改变。</p> <p>#核心 API
+createPinia
+defineStore
+storeToRefs
+#其他 API
+重置数据：this.$reset() store.$reset()</p> <p>#模块
+#模块分拆
+#模块合并
+​</p> <p>#插件
+持久化插件：<code>https://github.com/prazdevs/pinia-plugin-persistedstate</code></p> <p>#注意事项
+注意：pinia 底层是 vue3 reactive 如果直接解构 store ，会造成响应式丢失！</p> <div class="language-ts extra-class"><pre class="language-ts"><code>需要使用 storeToRefs 来进行相应式处理
+<span class="token comment">// 需要使用 storeToRefs 来进行相应式处理</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> storeToRefs <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'pinia'</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">defaultStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> count <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">storeToRefs</span><span class="token punctuation">(</span>store<span class="token punctuation">)</span>
+<span class="token keyword">return</span> <span class="token punctuation">{</span> count <span class="token punctuation">}</span>
+</code></pre></div><p>#调试工具
+VueDevTools 支持，无需额外安装。</p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/vuepress-starter/vue/vueResponed.html" class="prev">
+          响应式原理
+        </a></span> <span class="next"><a href="/vuepress-starter/vue/hrsaas/01-vuex基础.html">
+          vuex基础
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-b57cc07c data-v-7dd95ae2></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 TS文档
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div></div></div>
+    <script src="/vuepress-starter/assets/js/app.4f332f4f.js" defer></script><script src="/vuepress-starter/assets/js/20.641559b0.js" defer></script><script src="/vuepress-starter/assets/js/1.0b8de66f.js" defer></script><script src="/vuepress-starter/assets/js/156.642c33ac.js" defer></script>
+  </body>
+</html>
