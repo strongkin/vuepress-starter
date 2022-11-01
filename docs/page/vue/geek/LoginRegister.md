@@ -8,7 +8,7 @@
 > - 能理解发送验证码的实现思路
 > - 能理解 Vant Form 实现表单验证的使用
 
-<img src="assets/image-20200228161041266.png" alt="image-20200228161041266" style="zoom:50%;" />
+<img src="./assets/image-20200228161041266.png" alt="image-20200228161041266" style="zoom:50%;" />
 
 ## 准备
 
@@ -54,7 +54,7 @@ export default {
 
 最后，访问 `/login` 查看是否能访问到登录页面。
 
-<img src="assets/image-20200229115109026.png" alt="image-20200229115109026" style="zoom:50%;" />
+<img src="./assets/image-20200229115109026.png" alt="image-20200229115109026" style="zoom:50%;" />
 
 
 ### 布局结构
@@ -592,7 +592,7 @@ async onSendSms () {
 
 ## 处理用户 Token
 
-<img src="assets/image-20200329121650635.png" alt="image-20200329121650635"  />
+<img src="./assets/image-20200329121650635.png" alt="image-20200329121650635"  />
 
 Token 是用户登录成功之后服务端返回的一个身份令牌，在项目中的多个业务中需要使用到：
 
@@ -617,7 +617,7 @@ Token 是用户登录成功之后服务端返回的一个身份令牌，在项�
 
 使用容器存储 Token 的思路：
 
-![image-20200109192157006](assets/image-20200109192157006.png)
+![image-20200109192157006](./assets/image-20200109192157006.png)
 
 - 登录成功，将 Token 存储到 Vuex 容器中
   - 获取方便
@@ -747,7 +747,7 @@ export const removeItem = name => {
 
 
 
-![img](assets/v2-8f29f24dd291ddf46abda5d5ab7bec6c_720w.jpg)
+![](./assets/v2-1381111111.jpg)
 
 概述：服务器生成token的过程中，会有两个时间，一个是token失效时间，一个是token刷新时间，刷新时间肯定比失效时间长，当用户的 `token` 过期时，你可以拿着过期的token去换取新的token，来保持用户的登陆状态，当然你这个过期token的过期时间必须在刷新时间之内，如果超出了刷新时间，那么返回的依旧是 401。
 

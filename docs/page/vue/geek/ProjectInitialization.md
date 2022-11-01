@@ -47,13 +47,13 @@ Vue CLI v4.2.3
  ( ) Unit Testing
  ( ) E2E Testing
 ```
+
 > 分别选择：
 > Babel：es6 转 es5
 > Router：路由
 > Vuex：数据容器，存储共享数据
 > CSS Pre-processors：CSS 预处理器，后面会提示你选择 less、sass、stylus 等
 > Linter / Formatter：代码格式校验
-
 
 ```shell
 ? Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n) n
@@ -163,7 +163,7 @@ npm run serve
 > 打开浏览器，输入其中任何一个地址进行访问。
 
 
-![image.png](assets/1582010300149-9932febe-2625-4ee7-986f-9190ab449fec.png)
+![image.png](./assets/1582010300149-9932febe-2625-4ee7-986f-9190ab449fec.png)
 
 如果能看到该页面，恭喜你，项目创建成功了。
 
@@ -325,9 +325,9 @@ export default router
 
 一、注册账户
 
-![image-20200325004756766](assets/image-20200325004756766.png)
+![image-20200325004756766](./assets/image-20200325004756766.png)
 
-![image-20200325004912687](assets/image-20200325004912687.png)
+![image-20200325004912687](./assets/image-20200325004912687.png)
 
 > 直接选择第三方登录即可
 
@@ -335,31 +335,31 @@ export default router
 
 二、创建项目
 
-![image-20200325005117323](assets/image-20200325005117323.png)
+![image-20200325005117323](./assets/image-20200325005117323.png)
 
-![image-20200325005648620](assets/image-20200325005648620.png)
+![image-20200325005648620](./assets/image-20200325005648620.png)
 
-![image-20200325010034390](assets/image-20200325010034390.png)
+![image-20200325010034390](./assets/image-20200325010034390.png)
 
 
 
 三、上传图标到项目
 
-![image-20200325010119980](assets/image-20200325010119980.png)
+![image-20200325010119980](./assets/image-20200325010119980.png)
 
-![image-20200325010201945](assets/image-20200325010201945.png)
+![image-20200325010201945](./assets/image-20200325010201945.png)
 
-![image-20200325010254398](assets/image-20200325010254398.png)
+![image-20200325010254398](./assets/image-20200325010254398.png)
 
-![image-20200325010413448](assets/image-20200325010413448.png)
+![image-20200325010413448](./assets/image-20200325010413448.png)
 
-![image-20200325010439802](assets/image-20200325010439802.png)
+![image-20200325010439802](./assets/image-20200325010439802.png)
 
 
 
 四、生成链接
 
-![image-20200325010505302](assets/image-20200325010505302.png)
+![image-20200325010505302](./assets/image-20200325010505302.png)
 
 
 
@@ -371,7 +371,7 @@ export default router
 
 ## 引入 Vant 组件库
 
-<img src="assets/1582010382780-c25b1af8-ce6d-438e-a6d5-009cd426b927.png" alt="image.png" style="zoom:25%;" />
+<img src="./assets/1582010382780-c25b1af8-ce6d-438e-a6d5-009cd426b927.png" alt="image.png" style="zoom:25%;" />
 
 
 
@@ -435,7 +435,7 @@ Vue.use(Vant)
 
 3、查阅文档使用组件
 
-![image.png](assets/1582017539392-6c48b63f-8e8b-4ef2-b4fa-ddeb059cec04.png)
+![image.png](./assets/1582017539392-6c48b63f-8e8b-4ef2-b4fa-ddeb059cec04.png)
 > Vant 的文档非常清晰，左侧是组件目录导航，中间是效果代码，右边是效果预览。
 
 
@@ -454,7 +454,7 @@ Vue.use(Vant)
 </van-cell-group>
 ```
 
-<img src="assets/image-20200227231037762.png" alt="image-20200227231037762" style="zoom:50%;" />
+<img src="./assets/image-20200227231037762.png" alt="image-20200227231037762" style="zoom:50%;" />
 
 > 如果在页面中能够正常的看到下面的效果，则说明 Vant 导入成功了。
 
@@ -486,11 +486,11 @@ import 'amfe-flexible'
 
 最后测试：在浏览器中切换不同的手机设备尺寸，观察 html 标签 `font-size` 的变化。
 
-![image.png](assets/1582034718723-500ef407-af66-4770-8fdd-33d0fc3ef9ed.png)
+![image.png](./assets/1582034718723-500ef407-af66-4770-8fdd-33d0fc3ef9ed.png)
 > 例如在 iPhone 6/7/8 设备下，html 标签字体大小为 37.5 px
 
 
-![image.png](assets/1582034950176-868d5875-3496-45d3-8a61-e556e1cc1f90.png)
+![image.png](./assets/1582034950176-868d5875-3496-45d3-8a61-e556e1cc1f90.png)
 > 例如在 iPhone 6/7/8 Plus 设备下，html 标签字体大小为 41.4 px
 
 
@@ -526,11 +526,11 @@ module.exports = {
 
 最后测试：**刷新浏览器页面**，审查元素的样式查看是否已将 `px` 转换为 `rem`。
 
-![image.png](assets/1582035408807-1adb02e6-4576-48b6-8fb9-b3a0c57ead0d.png)
+![image.png](./assets/1582035408807-1adb02e6-4576-48b6-8fb9-b3a0c57ead0d.png)
 > 这是没有配置转换之前的。
 
 
-![image.png](assets/1582035305177-d13c0a83-65bf-4fe5-a509-83bbb3bbf627.png)
+![image.png](./assets/1582035305177-d13c0a83-65bf-4fe5-a509-83bbb3bbf627.png)
 > 这是转换之后的，可以看到 px 都被转换为了 rem。
 
 
@@ -585,7 +585,7 @@ PostCSS 一般不单独使用，而是与已有的构建工具进行集成。
 
 （2）Autoprefixer 插件的配置
 
-![image-20200319104557718](assets/image-20200319104557718.png)
+![image-20200319104557718](./assets/image-20200319104557718.png)
 
 [autoprefixer](https://github.com/postcss/autoprefixer) 是一个自动添加浏览器前缀的 PostCss 插件，`browsers` 用来配置兼容的浏览器版本信息，但是写在这里的话会引起编译器警告。
 
@@ -618,7 +618,7 @@ https://twitter.com/browserslist
 
 （3）postcss-pxtorem 插件的配置
 
-![image-20200319105610557](assets/image-20200319105610557.png)
+![image-20200319105610557](./assets/image-20200319105610557.png)
 
 - `rootValue`：表示根元素字体大小，它会根据根元素大小进行单位转换
 - `propList` 用来设定可以从 px 转为 rem 的属性
