@@ -337,66 +337,7 @@ module.exports = {
             },
           ],
         },
-        {
-          title: "vue电商后台项目",
-          // path: "/page/vue/VueManageprojectsinthebackground",
-          collapsable: false, // 折叠
-          children: [
-            {
-              title: "vue电商后台项目",
-              path: "/page/vue/VueManageprojectsinthebackground",
-            },
-          ],
-        },
-        {
-          title: "移动h5",
-          // path: "/page/vue/geek/ProjectInitialization",
-          collapsable: false, // 折叠
-          children: [
-            {
-              title: "项目初始化",
-              path: "/page/vue/geek/ProjectInitialization",
-            },
-            { title: "登录注册", path: "/page/vue/geek/LoginRegister" },
-            { title: "个人中心", path: "/page/vue/geek/03-个人中心" },
-            {
-              title: "首页-文章列表",
-              path: "/page/vue/geek/04-首页-文章列表",
-            },
-            {
-              title: "首页-频道编辑",
-              path: "/page/vue/geek/05-首页-频道编辑",
-            },
-            {
-              title: "文章搜索",
-              path: "/page/vue/geek/06-文章搜索",
-            },
-            {
-              title: "文章详情",
-              path: "/page/vue/geek/07-文章详情",
-            },
-            {
-              title: "文章评论",
-              path: "/page/vue/geek/08-文章评论",
-            },
-            {
-              title: "用户页面",
-              path: "/page/vue/geek/09-用户页面",
-            },
-            {
-              title: "用户关注&粉丝",
-              path: "/page/vue/geek/10-用户关注&粉丝",
-            },
-            {
-              title: "我的收藏-历史",
-              path: "/page/vue/geek/11-我的收藏-历史",
-            },
-            {
-              title: "编辑用户资料",
-              path: "/page/vue/geek/12-编辑用户资料",
-            },
-          ],
-        },
+    
       ],
       "/vue/": [
         {
